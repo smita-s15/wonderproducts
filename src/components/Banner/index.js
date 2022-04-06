@@ -43,9 +43,9 @@ const Page1 = () => {
   return (
     <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE' fontFamily='Cinzel' >
       <Container fixed sx={{ padding: '100px 0' }}>
-        <Box sx={{ width: '70%' }}>
-          <Typography variant="h1" >
-            India’s leading contract manufacturer
+        <Box sx={{ width: '90%' }}>
+          <Typography variant="h2" >
+            India’s Leading Contract Manufacturer
           </Typography>
           <br />
           <Typography variant="h6" >

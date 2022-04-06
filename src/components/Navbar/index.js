@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom'
 export const Navbar = () => {
 
   return (
-    <AppBar position="static" sx={{ boxShadow: 'none', background: '#fff', padding: '10px', marginX:'auto' }}>
+    <AppBar position="static" sx={{ boxShadow: 'none', background: '#B4C9CE', padding: '10px', marginX:'auto' }} >
       <Toolbar >
         <Box flexGrow='1'>
           <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />

@@ -1,4 +1,6 @@
 import { createTheme } from "@mui/material/styles";
+import Cinzel from '@fontsource/cinzel'
+import Overpass from '@fontsource/overpass'
 
 const defaultTheme = createTheme({
     palette: {
