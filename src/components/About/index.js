@@ -4,10 +4,10 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <Box position='relative' height='40rem' bgcolor='#FED5C3' alignContent='center'>
-      <Container fixed sx={{ padding: '100px 0' }}>
+    <Box position='relative' height='30rem' bgcolor='#FED5C3' alignContent='center' marginTop={10}>
+      <Container fixed  sx={{ padding: '100px 0', display:'flex' }}>
         <Box sx={{ width: '70%' }}>
-          <Typography variant="h2" >
+          <Typography variant="h3" >
           About Wonder Products
           </Typography>
           <br />
@@ -18,10 +18,10 @@ export const About = () => {
           Explore!
         </Button>
         </Box>
-      </Container>
-        <Box sx={{ width: '40%', position: 'absolute', right: '0', zIndex: '10' ,marginBottom:'10px' }}>
+        <Box sx={{ width: '40%', position: 'absolute', right: '0'}}>
         <img src={require("../../ui/assets/About/set-skincare-bottles-containers 2 (1).png")} alt="" style={{ width: '100%' }} />
         </Box>
+      </Container>
     </Box>
   )
 }

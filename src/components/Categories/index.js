@@ -3,29 +3,25 @@ import React from 'react'
 
 export const Categories = () => {
   return (
-    <Box height='40rem' >
-      <Container fullwidth='true' >
-        <Box>
-          <Typography variant='h3'>
+      <Box fullwidth='true' flexDirection='column' >
+          <Typography variant='h3' ml={10}>
             Categories
           </Typography>
-        </Box>
-        <Grid container md={8} xl={12}>
-          <Grid item md={3} xl={2} >
-            {/* {Category.map((item, index) =>  */}
-            {/* // console.log("item",item) */}
-              <Box  bgcolor='pink' sx={{ justifyContent: 'center', display: 'flex', alignItems: 'center', height: '200px' }} borderRadius={5} flexDirection='column' >
-
-                <Typography variant='body1' fontWeight='bold' marginTop={2} >
-                  Hair Care
+          <Box sx={{marginX:'auto', display:'flex', justifyContent:'center', alignItems:'center', marginTop:'20px'}}>
+            <Grid container md={8} lg={12} sx={{ justifyContent: 'space-between', alignItems: 'center', display: 'flex', width:'100%'}} >
+            {Category.map((item, index) => 
+          <Grid item md={2} xl={2} m='10px' >
+              <Box key={index} bgcolor='#FED5C3' sx={{ justifyContent: 'center', display: 'flex', alignItems: 'center', height: '150px' }} borderRadius={5} flexDirection='column' >
+                <img src={require("../../ui/assets/Categories/Mask Group.png")} alt="" /> 
+                <Typography variant='body1' fontWeight='bold' marginTop={2} textAlign='center' >
+                  {item.title}
                 </Typography>
               </Box>
-            {/* )}  */}
-                <img src={require("../../ui/assets/Categories/Mask Group.png").default} alt='' style={{height:'50%', width:'80%'}} />
           </Grid>
+            )}
         </Grid>
-      </Container>
-    </Box>
+        </Box>
+      </Box>
   )
 }
 
