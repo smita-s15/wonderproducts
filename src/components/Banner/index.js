@@ -13,25 +13,25 @@ export const Banner = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-};
+  };
   return (
     <>
-    <Box className='banner' >
-    <Slider {...settings}>
+      <Box className='banner' >
+        <Slider {...settings}>
           <div>
           <Page1 />
           </div>
           <div>
           <Page2 />
-          </div>
-          <div>
+          </div> 
+        <div>
           <Page3 />
-          </div>
-          <div>
+        </div>
+        <div>
           <Page4 />
           </div>
         </Slider>
-    </Box>
+      </Box>
     </>
   )
 }
@@ -107,7 +107,7 @@ const Page2 = () => {
 const Page3 = () => {
   return (
     <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE' >
-      <Container fixed sx={{ padding: '100px 0' }}>
+      <Container fixed sx={{ display:'flex', padding: '100px 0',  justifyContent: 'space-between', alignItems:'center' }}>
         <Box sx={{ width: '70%' }}>
           <Typography variant="h1" >
             Luxury Packaging
@@ -120,10 +120,10 @@ const Page3 = () => {
             Explore!
           </Button>
         </Box>
+        <Box sx={{  top: '80px', zIndex: '5' }} marginLeft={10} >
+          <img src={require("../../ui/assets/Banner/132 1.png")} alt="" style={{ width: '100%' }} />
+        </Box>
       </Container>
-      <Box sx={{ position: 'absolute', right: '10px', top: '100px', zIndex: '5' }} >
-        <img src={require("../../ui/assets/Banner/132 1.png")} alt="" style={{ width: '100%' }} />
-      </Box>
       <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' }}>
         <img src={require("../../ui/assets/Banner/wonder.png")} alt="" style={{ height: '100vh' }} />
       </Box>
@@ -144,6 +144,7 @@ const Page4 = () => {
   return (
     <>
       <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE' >
+        
         <Grid
           container
           spacing={0}

@@ -1,4 +1,4 @@
-import { AppBar,Toolbar} from '@mui/material'
+import { AppBar,Container,Toolbar} from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
@@ -9,6 +9,7 @@ export const Navbar = () => {
 
   return (
     <AppBar position="static" sx={{ boxShadow: 'none', background: '#FFFFFF', padding: '10px', marginX:'auto' }} >
+      <Container>
       <Toolbar >
         <Box flexGrow='1'>
           <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
@@ -35,6 +36,7 @@ export const Navbar = () => {
           })}
         </Toolbar>
       </Toolbar>
+      </Container>
     </AppBar>
   )
 }
