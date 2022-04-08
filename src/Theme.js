@@ -1,6 +1,7 @@
 import { createTheme } from "@mui/material/styles";
-import Cinzel from '@fontsource/cinzel'
-import Overpass from '@fontsource/overpass'
+import "@fontsource/playfair-display"
+import "@fontsource/overpass"
+import "@fontsource/cinzel"
 
 const defaultTheme = createTheme({
     palette: {
@@ -72,7 +73,7 @@ const theme = {
                     lineHeight: "64px",
                 },
                 h3: {
-                    fontFamily: 'Cinzel',
+                    fontFamily: 'Playfair Display',
                     fontStyle: "normal",
                     fontWeight: 700,
                     fontSize: "38px",

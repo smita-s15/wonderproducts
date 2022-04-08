@@ -1,28 +1,30 @@
-import { Container, Grid, Typography } from '@mui/material'
-import { Box, display } from '@mui/system'
+import { Container,  Typography } from '@mui/material'
+import { Box,} from '@mui/system'
 import React from 'react'
 
 export const Services = () => {
     return (
-        <Box flexDirection='column' sx={{display:'flex', justifyContent:'center', align:'center', p:'20px 10px'}} height='30rem'>
-            <Typography variant='h3' ml={10}>Our Services</Typography>
-            <Box sx={{marginX:'auto', display:'flex', justifyContent:'center', alignItems:'center', marginTop:'20px'}}>
-            <Grid container md={10} lg={12} sx={{ justifyContent: 'space-between', alignItems: 'center', display: 'flex', width:'100%'}} >
+        <Box height='40rem' bgcolor='#E5E5E5' alignContent='center' >
+            <Container fixed  sx={{ padding: '100px 0', display:'flex'  }}>
+            <Box flexDirection='column'>
+            <Typography variant='h3' >Our Services</Typography>
+            <Box  sx={{ justifyContent: 'space-between', alignItems: 'center', display: 'flex', width:'100%', gap:'30px',}} marginTop={5} >
                 {services.map((item, index) =>
-                    <Grid item md={3} key={index}  >
+                    <Box key={index} bgcolor='#FFFFFF' sx={{padding:'20px' ,  borderRadius:'10px' ,}} >
                         <Box flexDirection='column' sx={{ justifyContent: 'center', display: 'flex' }}>
                             <Typography variant='h5' >
                                 {item.title}
                             </Typography>
                         </Box>
-                        <Box border='2px solid #FED5C3' width='20%' bgcolor='#FED5C3' />
+                        <Box border='2px solid #FED5C3' width='30%' bgcolor='#FED5C3' />
                         <Typography mt={2}>
                             {item.desc}
                         </Typography>
-                    </Grid>
+                    </Box>
                 )}
-            </Grid>
             </Box>
+            </Box>
+            </Container>
         </Box>
     )
 }

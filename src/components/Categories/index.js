@@ -1,69 +1,108 @@
-import { Box, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
+import { Container, Typography, Box } from '@mui/material/'
+
+import { useStyles } from './Style'
 
 export const Categories = () => {
-  return (
-      <Box fullwidth='true' flexDirection='column' >
-          <Typography variant='h3' ml={10}>
-            Categories
-          </Typography>
-          <Box sx={{marginX:'auto', display:'flex', justifyContent:'center', alignItems:'center', marginTop:'20px'}}>
-            <Grid container md={8} lg={12} sx={{ justifyContent: 'space-between', alignItems: 'center', display: 'flex', width:'100%'}} >
-            {Category.map((item, index) => 
-          <Grid item md={2} xl={2} m='10px' >
-              <Box key={index} bgcolor='#FED5C3' sx={{ justifyContent: 'center', display: 'flex', alignItems: 'center', height: '150px' }} borderRadius={5} flexDirection='column' >
-                <img src={require("../../ui/assets/Categories/Mask Group.png")} alt="" /> 
-                <Typography variant='body1' fontWeight='bold' marginTop={2} textAlign='center' >
-                  {item.title}
+    const classes = useStyles()
+    const [active, setActive] = React.useState(false)
+    const [activeComp, setActiveComp] = React.useState("")
+    // console.log("hey", activeComp)
+    return (
+        <>
+            <Container fixed sx={{ margin: '100px auto', }}>
+                <Typography variant="h3" color="initial">
+                    Categories
                 </Typography>
-              </Box>
-          </Grid>
-            )}
-        </Grid>
-        </Box>
-      </Box>
-  )
+                <br />
+                <Box sx={{ display: 'flex', gap: '30px', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+                    {new Array(5).fill("").map((item, index, i) => (
+                        <Box className={classes.card} onMouseOut={() => { setActive(false); setActiveComp("") }} 
+                        onMouseOver={() => { setActive(true); setActiveComp(i) }} key={index} >
+                            <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
+                            <Typography variant="h5" color="initial">
+                                {i}
+                            </Typography>
+                        </Box>
+                    ))}
+                </Box>
+                <Box
+                    display={active ? ("block") : ("none")}
+                    sx={{ height: '50vh', background: '#FED5C3', borderRadius: "10px", }}>
+                    {Details.filter((Data) => Data.id === activeComp).map((item, i) => (
+                        <>
+                            <Box sx={{ padding: '20px' }}>
+                                {item.value} : {item.id}
+                            </Box>
+                        </>
+                    ))}
+                </Box>
+            </Container>
+        </>
+    )
 }
 
-const Category = [
-  {
-    title: 'Hair Care',
-    image: '../../ui/assets/Categories/Mask Group.png'
-  },
-  {
-    title: 'Face Care',
-    image: '../../ui/assets/Categories/Mask Group (1).png'
-  },
-  {
-    title: 'Skin Care',
-    image: '../../ui/assets/Categories/hygiene-products.png'
-  },
-  {
-    title: 'Mouth Care',
-    image: '../../ui/assets/Categories/mouth.png'
-  },
-  {
-    title: 'Hand Care',
-    image: '../../ui/assets/Categories/washing-hands.png'
-  },
-  {
-    title: 'Foot Care',
-    image: '../../ui/assets/Categories/pedicure.png'
-  },
-  {
-    title: 'Baby Care',
-    image: '../../ui/assets/Categories/mother (1).png'
-  },
-  {
-    title: 'Fragrance ',
-    image: '../../ui/assets/Categories/perfume.png'
-  },
-  {
-    title: 'Daily Use Products',
-    image: '../../ui/assets/Categories/basket.png'
-  },
-  {
-    title: 'Veternary Products',
-    image: '../../ui/assets/Categories/hygiene-products.png'
-  },
+const Data = [
+    {
+        name: '',
+        image: ''
+    },
+    {
+        name: '',
+        image: ''
+    },
+    {
+        name: '',
+        image: ''
+    },
+    {
+        name: '',
+        image: ''
+    },
+    {
+        name: '',
+        image: ''
+    },
+]
+const Details = [
+    {
+        id: 0,
+        value: 'hey'
+    },
+    {
+        id: 1,
+        value: 'hey'
+    },
+    {
+        id: 2,
+        value: 'hey'
+    },
+    {
+        id: 3,
+        value: 'hey'
+    },
+    {
+        id: 4,
+        value: 'hey'
+    },
+    {
+        id: 5,
+        value: 'hey'
+    },
+    {
+        id: 6,
+        value: 'hey'
+    },
+    {
+        id: 7,
+        value: 'hey'
+    },
+    {
+        id: 8,
+        value: 'hey'
+    },
+    {
+        id: 9,
+        value: 'hey'
+    },
 ]

@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom'
 export const Navbar = () => {
 
   return (
-    <AppBar position="static" sx={{ boxShadow: 'none', background: '#B4C9CE', padding: '10px', marginX:'auto' }} >
+    <AppBar position="static" sx={{ boxShadow: 'none', background: '#FFFFFF', padding: '10px', marginX:'auto' }} >
       <Toolbar >
         <Box flexGrow='1'>
           <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
@@ -24,7 +24,7 @@ export const Navbar = () => {
                   lineHeight: "19px",
                   color: '#000',
                   textDecoration: 'none',
-                  fontWeight: "800",
+                  fontWeight: "600",
                   marginLeft: "40px"
                 })} 
                 to={item.link}
@@ -62,7 +62,7 @@ const Arr = [
   },
   {
     title: 'Contact Us',
-    link: '#'
+    link: '/Contact'
   },
   {
     title: 'Locations',
@@ -70,6 +70,6 @@ const Arr = [
   },
   {
     title: 'Global Networks',
-    link: '#'
+    link: '/Globals'
   },
 ]

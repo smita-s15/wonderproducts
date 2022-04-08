@@ -1,5 +1,5 @@
-import { Button, Container, TextField, Typography } from '@mui/material'
-import { borderRadius, Box, height } from '@mui/system'
+import { Button, Container, TextareaAutosize, TextField, Typography } from '@mui/material'
+import {  Box, } from '@mui/system'
 import React from 'react'
 
 
@@ -9,7 +9,7 @@ export const Enquiry = () => {
     return (
         <Box position='relative' height='30rem' bgcolor='#FED5C3' alignContent='center' marginTop={10}>
             <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Box flexDirection='column' sx={{ width: '50%', height:'20rem', display:'flex' ,mt:'10px', mr:'20px'}}>
+                <Box flexDirection='column' sx={{ width: '50%', height: '20rem', display: 'flex', mt: '10px', mr: '20px' }}>
                     <Typography variant="h4" >
                         Enquiry Now
                     </Typography>
@@ -18,7 +18,7 @@ export const Enquiry = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit pharetra vestibulum vitae nibh rhoncus, amet, sit. Nunc maecenas mauris massa eget viverra.
                     </Typography>
                 </Box>
-                <Container sx={{ width: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
+                <Container sx={{ width: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }} >
                     <form >
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '15px', }}>
                             <Box>
@@ -46,10 +46,15 @@ export const Enquiry = () => {
                         <Box marginTop={3} flexDirection='column' >
 
                             <Typography variant='h6'> Message</Typography>
-                            <TextField placeholder="Enter Message" variant="outlined" fullWidth='true' style={{ backgroundColor: 'white', borderRadius: '5px' }} />
+                            <TextareaAutosize
+                                aria-label="minimum height"
+                                minRows={4}
+                                placeholder="Enter Message"
+                                style={{ backgroundColor: 'white', borderRadius: '5px', width: '100%' }}
+                            />
 
-                            <Button size="large" variant="contained" color="primary" sx={{ px: '30px', marginTop: '50px', mt:'20px' }}>
-                               Send
+                            <Button size="large" variant="contained" color="primary" sx={{ px: '30px', marginTop: '50px', mt: '20px' }}>
+                                Send
                             </Button>
                         </Box>
                     </form>

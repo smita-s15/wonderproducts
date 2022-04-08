@@ -8,7 +8,6 @@ import { Packaging } from '../Packaging'
 import { Clients } from '../Clients'
 import { FAQ } from '../FAQs'
 import { Enquiry } from '../Enquiry'
-import { Footer } from '../Footer'
 
 export const Index = () => {
   return (
@@ -20,9 +19,8 @@ export const Index = () => {
         <WhyUs />
         <Packaging />
         <Clients />
-        <FAQ />
+        {/* <FAQ /> */}
         <Enquiry />
-        <Footer />
     </div>
   )
 }
