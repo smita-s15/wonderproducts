@@ -17,20 +17,20 @@ export const Banner = () => {
   return (
     <>
       <Box className='banner' >
-        {/* <Slider {...settings}>
+        <Slider {...settings}>
           <div>
           <Page1 />
-          </div> */}
+          </div>
           <div>
           <Page2 />
           </div> 
-        {/* <div>
+        <div>
           <Page3 />
         </div>
         <div>
           <Page4 />
           </div>
-        </Slider> */}
+        </Slider>
       </Box>
     </>
   )
