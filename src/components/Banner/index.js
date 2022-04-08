@@ -17,20 +17,20 @@ export const Banner = () => {
   return (
     <>
       <Box className='banner' >
-        <Slider {...settings}>
+        {/* <Slider {...settings}>
           <div>
           <Page1 />
-          </div>
+          </div> */}
           <div>
           <Page2 />
           </div> 
-        <div>
+        {/* <div>
           <Page3 />
         </div>
         <div>
           <Page4 />
           </div>
-        </Slider>
+        </Slider> */}
       </Box>
     </>
   )
@@ -89,7 +89,7 @@ const Page2 = () => {
         </Box>
       </Container>
       <Box sx={{ position: 'absolute', right: '0', top: '5px', zIndex: '10' }}>
-        <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '100%' }} />
+        <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '70%' }} />
       </Box>
       <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' }}>
         <img src={require("../../ui/assets/Banner/wonder.png")} alt="" style={{ height: '100vh' }} />
