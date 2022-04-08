@@ -5,7 +5,7 @@ import { Footer } from '../../components/Footer'
 export const Globals = () => {
     return (
         <>
-            <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
+            <Box flexDirection='column'  sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
                 
                 <Box width='100%' height='13rem' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
                     <img src={require("../../ui/assets/Globals/Global Network.png")} alt="" style={{ width: '100%', height: '120px' }} />

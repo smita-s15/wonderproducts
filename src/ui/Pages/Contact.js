@@ -76,8 +76,10 @@ export const Contact = () => {
             <img src={require("../../ui/assets/Contact/Mask group.png")} alt="" style={{ height: '600px', width: '100%' }} />
           </Box>
         </Box>
+        <Box marginTop={10}>
+          <Clients />
+        </Box>
       </Box>
-      <Clients />
     </>
 
   )
