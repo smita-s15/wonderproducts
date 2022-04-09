@@ -69,10 +69,10 @@ export const Globals = () => {
                         </Container>
                     </Box>
                 </Box>
-                <Box marginTop={10}>
-                    <img src={require("../../ui/assets/Globals/Group 1000001875.png")} alt="" style={{ width: '100%', }} />
-                </Box>
             </Box>
+                <Box sx={{ display:'flex', justifyContent:'center', width:'100%' ,marginY:'100px' }}>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.68137449518!2d73.72253441655795!3d18.524890170138075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1649487309551!5m2!1sen!2sin" width="100%" height="700" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </Box>
         </>
     )
 }

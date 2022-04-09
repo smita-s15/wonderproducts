@@ -12,7 +12,9 @@ export const Navbar = () => {
       <Container>
       <Toolbar >
         <Box flexGrow='1'>
+        <NavLink to="/">
           <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
+          </NavLink>
         </Box>
         <Toolbar>
           {Arr?.map((item, index) => {

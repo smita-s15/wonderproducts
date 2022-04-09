@@ -15,12 +15,17 @@ export const Packaging = () => {
                     </Typography>
                 </Box>
             </Box>
-            <Container fixed sx={{ padding: '100px, auto', marginY:'100px' }} >\
+            <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >
                 <Grid container xl={12} lg={12} md={12} gap='100px'>
                     {details.map((item, index) =>
                         <Grid key={index} xl={3} lg={3} md={4} item bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', padding: '10px auto', width: '25%', height: '150px', gap: '10px' }}>
-                            <img src={item.image} alt="" style={{ height: "100px", width: '100px' }} />
-                            <Box sx={{display:'flex' , justifyContent:'center', alignItems:'flex-start' , flexWrap:'wrap'}}>
+                            {/* <Box>
+                                <image src={item.image} alt="" />
+                            </Box> */}
+                            <Box>
+                                {item.image} 
+                            </Box>
+                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap' }}>
                                 <Typography variant='h6' textAlign='left'>
                                     {item.title}
                                 </Typography>
@@ -38,7 +43,7 @@ export const Packaging = () => {
 
 const details = [
     {
-        image: 'require("../../ui/assets/Packaging/212565410 2.png")',
+        image: '<img src={require("../../ui/assets/Packaging/212565410 2.png")} alt="" style={{ height: "100px", width:"100px" }} />',
         title: ' sachet packing'
     },
     {
