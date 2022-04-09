@@ -5,6 +5,9 @@ import "@fontsource/cinzel"
 
 const defaultTheme = createTheme({
     palette: {
+        background: {
+            default: "#FBFBFB"
+        },
         primary: {
             main: "#000000",
             dark: "#B4C9CE",
@@ -53,7 +56,7 @@ const theme = {
                     opacity: 0.9,
                     marginBottom: '0',
                     paddingBottom: '0',
-                    position: 'absolute', bottom: '0', border: '1px solid red', 
+                    position: 'absolute', bottom: '0', border: '1px solid red',
                 },
                 h1: {
                     fontStyle: "normal",

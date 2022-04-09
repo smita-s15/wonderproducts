@@ -1,11 +1,12 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { Clients } from '../../components/Clients'
 import React from 'react'
+import { height } from '@mui/system'
 
 export const Client = () => {
     return (
         <>
-            <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
+            <Box flexDirection='column'  bgcolor='#FBFBFB' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
                 <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
                     <Box position='absolute' width='100%'>
                         <img src={require("../../ui/assets/Clients/clients.png")} alt="" style={{ height: "100%", width: '100%' }} />
@@ -19,15 +20,13 @@ export const Client = () => {
                 <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >\
                     <Grid container xl={12} lg={12} md={12} sm={12} gap='100px'>
                         {details.map((item, index) =>
-                            <Grid key={index} xl={3} lg={3} md={5} sm={6} flexDirection='column' item bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '30%', height: '200px', gap: '10px' }}>
+                            <Grid key={index} xl={3} lg={3} md={5} sm={6} flexDirection='column' item bgcolor='#FFFFFF' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '30%', height: '300px', gap: '10px',borderRadius:'10px',  }} boxShadow='10px'>
 
-                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%' }}>
-                                    <Typography variant='h6' textAlign='left'>
+                                <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor:'#B4C9CE29', alignItems:'center', height:'200px', width:'250px', margin:'10px' , borderRadius:'10px', padding:'20px' }}>
                                         {item.image}
-                                    </Typography>
                                 </Box>
-                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%' }}>
-                                    <Typography variant='h6' textAlign='left'>
+                                <Box sx={{ display: 'flex', justifyContent: 'left', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%',padding:'10px' }}>
+                                    <Typography variant='h5' textAlign='left'>
                                         {item.title}
                                     </Typography>
                                 </Box>

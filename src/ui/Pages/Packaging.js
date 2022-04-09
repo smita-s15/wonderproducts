@@ -18,7 +18,7 @@ export const Packaging = () => {
             <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >
                 <Grid container xl={12} lg={12} md={12} gap='100px'>
                     {details.map((item, index) => {
-                        return <Grid key={index} xl={3} lg={3} md={4} item bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '25%', height: '150px'}}>
+                        return <Grid key={index} xl={3} lg={3} md={4} item bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '25%', height: '150px', borderRadius:'10px'}}>
                             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width:'40%', marginX:'5' }}>
                                 {item.image}
                             </Box>
