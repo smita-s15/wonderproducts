@@ -45,7 +45,9 @@ const Page1 = () => {
       <Container fixed sx={{ padding: '100px 0' }}>
         <Box sx={{ width: '90%' }}>
           <Typography variant="h2" >
-            India’s Leading Contract <br /> Manufacturer
+            India’s Leading Contract 
+            <br /> 
+            Manufacturer
           </Typography>
           <br />
           <Typography variant="h6" >
