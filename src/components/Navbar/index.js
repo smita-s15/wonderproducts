@@ -52,15 +52,15 @@ const Arr = [
   },
   {
     title: 'Categories',
-    link: '#'
+    link: '/Categories'
   },
   {
     title: 'Packaging',
-    link: '#'
+    link: '/Packaging'
   },
   {
     title: 'Clients',
-    link: '#'
+    link: '/Client'
   },
   {
     title: 'Contact Us',

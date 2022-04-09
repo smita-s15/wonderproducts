@@ -2,22 +2,21 @@ import { Button, Container, TextareaAutosize, TextField, Typography } from '@mui
 import { Box, display } from '@mui/system'
 import React from 'react'
 import { Clients } from '../../components/Clients'
-import { Footer } from '../../components/Footer'
 
 export const Contact = () => {
   return (
     <>
       <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
-        <Box width='100%' height='13rem' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
-          <img src={require("../../ui/assets/Contact/contact us.png")} alt="" style={{ width: '100%', height: '120px' }} />
-        </Box>
-        <Container  >
-          <Box sx={{ display: 'flex', }} marginTop='-100px' marginLeft={5}>
-            <Typography variant='h3'>
+        <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
+          <Box position='absolute' width='100%'>
+            <img src={require("../../ui/assets/Contact/contact us.png")} alt="" style={{ height: "100%", width: '100%' }} />
+          </Box >
+          <Box sx={{ m: '100px auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }} position='absolute' width='50%'>
+            <Typography variant='h1'  >
               Contact Us
             </Typography>
           </Box>
-        </Container>
+        </Box>
         <Box marginTop={20} >
           <Box position='absolute' bgcolor='#FED5C3' borderRadius={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '50%', height: '45rem' }} marginLeft={10} marginTop={-7} >
             <Container >

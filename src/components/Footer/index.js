@@ -12,10 +12,10 @@ import { FaInstagram } from "react-icons/fa"
 
 export const Footer = () => {
     return (
-        <Box height='24rem' flexDirection='row' bgcolor='black' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} width='100%'  >
-            <Container  sx={{ margin: '100px auto', }}>
-            <Stack direction='row' sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', align: 'center' }} spacing={15} padding={5} margin={5}>
-                <Stack sx={{ width: '100%' }}>
+        <Box height='24rem'  bgcolor='black' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
+            <Container  sx={{ margin: '10px auto' }}>
+            <Stack direction='row' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', align: 'center' }} spacing={15} padding={5} >
+                <Stack sx={{ width: '80%' }}>
                     <Box flexGrow='1'>
                         <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
                         <Typography sx={{ color: 'white', mt: '30px' }}>

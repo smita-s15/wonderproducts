@@ -9,7 +9,7 @@ export const Enquiry = () => {
     return (
         <Box position='relative' height='30rem' bgcolor='#FED5C3' alignContent='center' marginTop={10}>
             <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Box flexDirection='column' sx={{ width: '50%', height: '20rem', display: 'flex', mt: '10px', mr: '20px' }}>
+                <Box flexDirection='column' sx={{ width: '50%', height: '20rem', display: 'flex', mt: '10px',}}>
                     <Typography variant="h4" >
                         Enquiry Now
                     </Typography>
@@ -22,12 +22,12 @@ export const Enquiry = () => {
                     <form >
                         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '15px', }}>
                             <Box>
-                                <Typography variant='h6'> First Name</Typography>
-                                <TextField placeholder="Enter First Name" variant="outlined" style={{ backgroundColor: 'white', borderRadius: '5px' }} />
+                                <Typography variant='h6' > First Name</Typography>
+                                <TextField placeholder="Enter First Name" variant="outlined"  size="small" style={{ backgroundColor: 'white', borderRadius: '4px' }} />
                             </Box>
                             <Box>
                                 <Typography variant='h6'> Last Name</Typography>
-                                <TextField placeholder="Enter Last Name" variant="outlined" style={{ backgroundColor: 'white', borderRadius: '5px' }} />
+                                <TextField placeholder="Enter Last Name" variant="outlined" size="small" style={{ backgroundColor: 'white', borderRadius: '4px' }} />
                             </Box>
 
                         </Box>
@@ -35,22 +35,23 @@ export const Enquiry = () => {
                         <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '15px', }} marginTop={3}  >
                             <Box>
                                 <Typography variant='h6'> Phone </Typography>
-                                <TextField placeholder="Enter Phone " variant="outlined" style={{ backgroundColor: 'white', borderRadius: '5px' }} />
+                                <TextField placeholder="Enter Phone " variant="outlined" size="small" style={{ backgroundColor: 'white', borderRadius: '4px' }} />
                             </Box>
                             <Box>
                                 <Typography variant='h6'> First Name</Typography>
-                                <TextField placeholder="Enter Email Adress" variant="outlined" style={{ backgroundColor: 'white', borderRadius: '5px' }} />
+                                <TextField placeholder="Enter Email Adress" variant="outlined" size="small" style={{ backgroundColor: 'white', borderRadius: '4px' }} />
                             </Box>
 
                         </Box>
                         <Box marginTop={3} flexDirection='column' >
 
                             <Typography variant='h6'> Message</Typography>
-                            <TextareaAutosize
+                            <TextField
+                                size="large"
                                 aria-label="minimum height"
-                                minRows={4}
-                                placeholder="Enter Message"
-                                style={{ backgroundColor: 'white', borderRadius: '5px', width: '100%' }}
+                                minRows={10}
+                                placeholder="write message.."
+                                style={{ backgroundColor: 'white', border:'none', borderRadius: '4px', width: '100%' }}
                             />
 
                             <Button size="large" variant="contained" color="primary" sx={{ px: '30px', marginTop: '50px', mt: '20px' }}>

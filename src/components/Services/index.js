@@ -4,22 +4,24 @@ import React from 'react'
 
 export const Services = () => {
     return (
-        <Box height='40rem' bgcolor='#E5E5E5' alignContent='center' >
+        <Box height='40rem' bgcolor='#FBFBFB' alignContent='center' >
             <Container fixed  sx={{ padding: '100px 0', display:'flex'  }}>
             <Box flexDirection='column'>
             <Typography variant='h3' >Our Services</Typography>
-            <Box  sx={{ justifyContent: 'space-between', alignItems: 'center', display: 'flex', width:'100%', gap:'30px',}} marginTop={5} >
+            <Box  sx={{ justifyContent: 'space-between', alignItems: 'center', display: 'flex', width:'100%', gap:'50px',}} marginTop={5} >
                 {services.map((item, index) =>
-                    <Box key={index} bgcolor='#FFFFFF' sx={{padding:'20px' ,  borderRadius:'10px' ,}} >
+                    <Box key={index} bgcolor='#FFFFFF' sx={{padding:'50px' ,  borderRadius:'10px'}} >
                         <Box flexDirection='column' sx={{ justifyContent: 'center', display: 'flex' }}>
-                            <Typography variant='h5' >
+                            <Typography variant='h4' >
                                 {item.title}
                             </Typography>
                         </Box>
-                        <Box border='2px solid #FED5C3' width='30%' bgcolor='#FED5C3' />
-                        <Typography mt={2}>
+                        <Box border='2px solid #FED5C3'  bgcolor='#FED5C3' width='25%' mt={2} />
+                        <Box margin='30px auto'>
+                        <Typography >
                             {item.desc}
                         </Typography>
+                        </Box>
                     </Box>
                 )}
             </Box>

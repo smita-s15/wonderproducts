@@ -1,76 +1,79 @@
-import { Container, Typography } from '@mui/material'
-import { Box } from '@mui/system'
 import React from 'react'
-
-export const WhyUs = () => {
-  return (
-    <Box  bgcolor='#D2D1D7' alignContent='center' sx={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'row', alignItems:'center',}}>
-      <Container fixed  sx={{ padding: '50px 0' , display: 'flex', justifyContent: 'space-between', flexDirection: 'row', alignItems:'center' }}>
-        <Box sx={{ width: '55%', height:'27rem', display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-
-          <img src={require("../../ui/assets/WhyUs/unsplash_wawEfYdpkag (1).png")} alt="" style={{ height: '160%', width: '90%' }} />
-        </Box>
-        <Box sx={{ width: '45%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-          <Box>
-            <Typography variant="h3" textAlign='left' width='100%' >
-              Why Us
-            </Typography>
-            <br />
-            <Typography variant="body1" textAlign='left' color='gray' >
-              End-to-end solutions for all manufacturing needs. From researched & tested formulations to development, & packaging. With advanced infrastructure and trained professionals, we serve you with quality results.
-            </Typography>
-            <br />
-            <Typography variant="body1" textAlign='left' color='gray' >
-              We bring to the table our expertise and dedication to manufacturing & produce innovative and workable solutions. We have International and domestic certifications, and dedicated research facilities to produce extraordinary-tested formulations.
-            </Typography>
-            <br />
-            <Typography variant="body1" textAlign='left' color='gray'>
-              We believe in leading the FMCG industry with research & innovation.
-            </Typography>
-
-          </Box>
+import { Container, Box, Grid } from '@mui/material/'
+import Typography from '@mui/material/Typography'
 
 
-          <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', }}  marginTop={5}    >
-            <Box width='50%' >
-              <Box flexDirection='column' >
-                <Typography variant="h3" fontFamily='Overpass'>
-                  300+
-                </Typography>
-                <Typography variant="h6" color='gray' >
-                  Clients
-                </Typography>
-              </Box>
-              <Box flexDirection='column'>
-                <Typography variant="h3" fontFamily='Overpass'>
-                  5000+
-                </Typography>
-                <Typography variant="h6" color='gray' >
-                  Products manufactured
-                </Typography>
-              </Box>
+const WhyUs = () => {
+    return (
+        <>
+            <Box sx={{ background: '#D2D1D7', height: '638px', display: 'flex', alignItems: 'center', margin: '100px auto' }}>
+                <Container fixed  >
+                    <Grid
+                        container
+                        spacing={10}
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        alignContent="center"
+                        wrap="wrap"
+                    >
+                        <Grid item xl="6" md="6" xs="12">
+                            <img src={require("../../ui/assets/WhyUs/unsplash_wawEfYdpkag (1).png")} alt="" style={{ width: '100%' }} />
+                        </Grid>
+                        <Grid item xl="6" md="6" xs="12">
+                            <Typography gutterBottom variant="h3" color="initial">
+                                Why us
+                            </Typography>
+                            <br />
+                            <Typography variant="body1" sx={{ opacity: '0.6' }} color="initial">
+                                One Stop Solution for White Label Contract Manufacturing of Personal Care, Hair Care, Oral Care, Home Care, Aerosol, Soaps & Detergents, Derma Cosmetics, Pharmaceuticals, Industrial Spray. We Work for Leading Cosmetics Companies From Both Domestic and International Locations.
+                            </Typography>
+                            <br />
+                            <Typography variant="body1" sx={{ opacity: '0.6' }} color="initial">
+                                One Stop Solution for White Label Contract Manufacturing of Personal Care, Hair Care, Oral Care, Home Care, Aerosol, Soaps & Detergents, Derma Cosmetics, Pharmaceuticals, Industrial Spray. We Work for Leading Cosmetics Companies From Both Domestic and International Locations.
+                            </Typography>
+                            <br />
+                            <br />
+                            <Box sx={{ display: 'flex', gap: '30px', flexWrap: 'wrap' }}>
+                                <Box sx={{ width: '45%' }}>
+                                    <Typography variant="h2" fontFamily='Overpass' color="initial">
+                                        300+
+                                    </Typography>
+                                    <Typography variant="h6" sx={{ opacity: '0.6' }} color="initial">
+                                        Clients
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ width: '45%' }}>
+                                    <Typography variant="h2" fontFamily='Overpass' color="initial">
+                                        10+
+                                    </Typography>
+                                    <Typography variant="h6" sx={{ opacity: '0.6' }} color="initial">
+                                        Years in industry
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ width: '45%' }}>
+                                    <Typography variant="h2" fontFamily='Overpass' color="initial">
+                                        5000+
+                                    </Typography>
+                                    <Typography variant="h6" sx={{ opacity: '0.6' }} color="initial">
+                                        Products manufactured
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ width: '45%' }}>
+                                    <Typography variant="h2" fontFamily='Overpass' color="initial">
+                                        2500+
+                                    </Typography>
+                                    <Typography variant="h6" sx={{ opacity: '0.6' }} color="initial">
+                                        Products packaged
+                                    </Typography>
+                                </Box>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Container>
             </Box>
-            <Box width='50%' >
-              <Box flexDirection='column'>
-                <Typography variant="h3" fontFamily='Overpass'>
-                  10+
-                </Typography>
-                <Typography variant="h6" color='gray' >
-                  Manufacturing Units
-                </Typography>
-              </Box>
-              <Box flexDirection='column'>
-                <Typography variant="h3" fontFamily='Overpass'>
-                  2500+
-                </Typography>
-                <Typography variant="h6" color='gray' >
-                  Products Packaged
-                </Typography>
-              </Box>
-            </Box>
-          </Box>
-        </Box>
-      </Container>
-    </Box>
-  )
+        </>
+    )
 }
+
+export default WhyUs

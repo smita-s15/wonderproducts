@@ -1,20 +1,26 @@
 import { Box, Button, Container, Typography } from '@mui/material'
+import { width } from '@mui/system'
 import React from 'react'
 import { Footer } from '../../components/Footer'
+
+
+
 
 export const Globals = () => {
     return (
         <>
-            <Box flexDirection='column'  sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
-                
-                <Box width='100%' height='13rem' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
-                    <img src={require("../../ui/assets/Globals/Global Network.png")} alt="" style={{ width: '100%', height: '120px' }} />
+            <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%',  }}  >
+
+                <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
+                    <Box position='absolute' width='100%' marginX='auto'>
+                        <img src={require("../../ui/assets/Globals/Global Network.png")} alt="" style={{height:"100%" , width:'100%'}} />
+                    </Box >
+                    <Box  sx={{m: '100px auto', display:'flex', justifyContent:'center', alignItems:'center' }} position='absolute' width='50%'>
+                        <Typography variant='h1'  >
+                            Global Networks
+                        </Typography>
+                    </Box>
                 </Box>
-                <Container fixed sx={{  display: 'flex', flexDirection: 'column', marginTop:'-140px' }}>
-                    <Typography variant='h3'>
-                        Global Networks
-                    </Typography>
-                </Container >
                 <Box height='50rem'>
                     <Box bgcolor='#FED5C3' width='100%' height='400px' marginTop={10}>
                         <Container fixed sx={{ padding: '100px 0', display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -25,7 +31,7 @@ export const Globals = () => {
                             <Typography>
                                 wonder product provides service to customers around the world through our One Asia and ACOA network agreements. We work together to drive innovation and share considerable knowledge of good manufacturing practices, technical expertise, R&D, and supply chain. Our customers benefit from this supply network on a global level through technical and R&D support, experienced commercial services, and multi-site manufacture and supply.
                             </Typography>
-                            <Box flexDirection='row'  sx={{ display: 'flex', justifyContent: 'space-between', gap: '30px' }}>
+                            <Box flexDirection='row' sx={{ display: 'flex', justifyContent: 'center', gap: '100px' }}>
                                 <Box bgcolor='#D2D1D7' width='500px' height='450px' marginTop={5} flexWrap='wrap'>
                                     <Container fixed sx={{ padding: '100px 0', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                         <Typography variant='h4' marginTop={-5}  >
@@ -64,7 +70,7 @@ export const Globals = () => {
                     </Box>
                 </Box>
                 <Box marginTop={10}>
-                    <img src={require("../../ui/assets/Globals/Group 1000001875.png")} alt="" style={{ width: '100%',  }} />
+                    <img src={require("../../ui/assets/Globals/Group 1000001875.png")} alt="" style={{ width: '100%', }} />
                 </Box>
             </Box>
         </>

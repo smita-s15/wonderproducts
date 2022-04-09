@@ -45,7 +45,7 @@ const Page1 = () => {
       <Container fixed sx={{ padding: '100px 0' }}>
         <Box sx={{ width: '90%' }}>
           <Typography variant="h2" >
-            India’s Leading Contract Manufacturer
+            India’s Leading Contract <br /> Manufacturer
           </Typography>
           <br />
           <Typography variant="h6" >
@@ -73,7 +73,7 @@ const Page2 = () => {
   return (
     <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE' >
       <Container fixed sx={{ padding: '100px 0' }}>
-        <Box sx={{ width: '70%' }}>
+        <Box sx={{ width: '90%' }}>
           <Typography variant="h1" >
             Reasearch & Development
             <br />
@@ -87,18 +87,18 @@ const Page2 = () => {
             Explore!
           </Button>
         </Box>
+      <Box sx={{ position: 'absolute', right: '0', top: '5%', zIndex: '10' }}>
+        <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '100%' }} />
+      </Box>
       </Container>
-      <Box sx={{ position: 'absolute', right: '0', top: '5px', zIndex: '10' }}>
-        <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '70%' }} />
-      </Box>
-      <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' }}>
-        <img src={require("../../ui/assets/Banner/wonder.png")} alt="" style={{ height: '100vh' }} />
-      </Box>
       <Box sx={{ position: 'absolute', left: '20px', bottom: '10px', }}>
         <img src={require("../../ui/assets/Banner/Wonder Products.png")} alt="" />
       </Box>
       <Box sx={{ position: 'absolute', left: '50%', top: '0.1%' }}  >
         <img src={require("../../ui/assets/Banner/Vector.png")} alt="" />
+      </Box>
+      <Box sx={{ position: 'absolute', left: '20%', bottom: '0.1%' }}  >
+        <img src={require("../../ui/assets/Banner/Flower.png")} alt="" />
       </Box>
     </Box>
   )

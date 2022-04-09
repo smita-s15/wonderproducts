@@ -43,7 +43,7 @@ export const Packaging = () => {
 
     return (
         <Box flexDirection='column'  position='relative' sx={{ display: 'flex',  justifyContent: 'center', width: '100%', gap: '30px', alignItems:'center' }} marginTop={10} >
-        <Container fixed sx={{ margin: '10px auto', height:'30rem' }}>
+        <Container fixed sx={{ margin: '10px auto', height:'30rem',  }}>
             <Box >
                 <Typography variant='h3' ml={5}>
                     Packaging
