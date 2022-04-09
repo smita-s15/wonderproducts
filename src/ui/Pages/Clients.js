@@ -5,35 +5,39 @@ import React from 'react'
 export const Client = () => {
     return (
         <>
-        <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
-            <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
-                <Box position='absolute' width='100%'>
-                    <img src={require("../../ui/assets/Clients/clients.png")} alt="" style={{ height: "100%", width: '100%' }} />
-                </Box >
-                <Box sx={{ m: '100px auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }} position='absolute' width='50%'>
-                    <Typography variant='h1'  >
-                        Clients
-                    </Typography>
+            <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
+                <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
+                    <Box position='absolute' width='100%'>
+                        <img src={require("../../ui/assets/Clients/clients.png")} alt="" style={{ height: "100%", width: '100%' }} />
+                    </Box >
+                    <Box sx={{ m: '100px auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }} position='absolute' width='50%'>
+                        <Typography variant='h1'  >
+                            Clients
+                        </Typography>
+                    </Box>
                 </Box>
+                <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >\
+                    <Grid container xl={12} lg={12} md={12} sm={12} gap='100px'>
+                        {details.map((item, index) =>
+                            <Grid key={index} xl={3} lg={3} md={5} sm={6} flexDirection='column' item bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '30%', height: '200px', gap: '10px' }}>
+
+                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%' }}>
+                                    <Typography variant='h6' textAlign='left'>
+                                        {item.image}
+                                    </Typography>
+                                </Box>
+                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%' }}>
+                                    <Typography variant='h6' textAlign='left'>
+                                        {item.title}
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                        )}
+
+                    </Grid>
+                </Container>
             </Box>
-            <Container fixed sx={{ padding: '100px, auto', marginY:'100px' }} >\
-                <Grid container xl={12} lg={12} md={12} gap='100px'>
-                    {details.map((item, index) =>
-                        <Grid key={index} xl={3} lg={3} md={5} flexDirection='column' item bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '30%', height: '150px', gap: '10px' }}>
-                            <img src={item.image} alt="" style={{ height: "100px", width: '100px' }} />
-                            <Box sx={{display:'flex' , justifyContent:'center', alignItems:'flex-start' , flexWrap:'wrap', width:'100%'}}>
-                                <Typography variant='h6' textAlign='left'>
-                                    {item.title}
-                                </Typography>
-
-                            </Box>
-                        </Grid>
-                    )}
-
-                </Grid>
-            </Container>
-        </Box>
-        <Clients />
+            <Clients />
         </>
     )
 }
@@ -41,27 +45,27 @@ export const Client = () => {
 
 const details = [
     {
-        image: 'require("../../ui/assets/Packaging/212565410 2.png")',
+        image: <img src={require("../../ui/assets/Clients/kindpng_7269149 1.png")} alt=""  />,
         title: 'Himalaya'
     },
     {
-        image: 'require("../../ui/assets/Packaging/212565410 2.png")',
+        image: <img src={require("../../ui/assets/Clients/image 80 (1).png")} alt="" style={{ height: "100px", width: '100px' }} />,
         title: 'Vini Cosmetics '
     },
     {
-        image: 'require("../../ui/assets/Packaging/212565410 2.png")',
+        image: <img src={require("../../ui/assets/Clients/image 81.png")} alt="" style={{ height: "100px", width: '100px' }} />,
         title: 'Dabur'
     },
     {
-        image: 'require("../../ui/assets/Packaging/212565410 2.png")',
+        image: <img src={require("../../ui/assets/Clients/image 82.png")} alt="" style={{ height: "100px", width: '100px' }} />,
         title: 'ITC Limited'
     },
     {
-        image: 'require("../../ui/assets/Packaging/212565410 2.png")',
+        image: <img src={require("../../ui/assets/Clients/Group 1000001769.png")} alt="" style={{ height: "100px", width: '100px' }} />,
         title: 'Nivea'
     },
     {
-        image: 'require("../../ui/assets/Packaging/212565410 2.png")',
+        image: <img src={require("../../ui/assets/Clients/PngItem_1057053 2.png")} alt="" style={{ height: "100px", width: '100px' }} />,
         title: 'Chicco'
     },
 ]
