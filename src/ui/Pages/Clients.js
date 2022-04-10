@@ -1,7 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { Clients } from '../../components/Clients'
 import React from 'react'
-import { height } from '@mui/system'
 
 export const Client = () => {
     return (
@@ -36,7 +35,6 @@ export const Client = () => {
                     </Grid>
                 </Container>
             </Box>
-            <Clients />
         </>
     )
 }

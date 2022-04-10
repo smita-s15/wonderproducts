@@ -7,6 +7,9 @@ import { Footer } from "./components/Footer";
 import { Categories } from "./ui/Pages/Categories";
 import { Packaging } from "./ui/Pages/Packaging";
 import { Client} from "./ui/Pages/Clients";
+import { Location } from "./ui/Pages/Location";
+import { Contract } from "./ui/Pages/Services/Contract";
+import { AboutUs } from "./ui/Pages/About/AboutUs";
 
 
 function App() {
@@ -16,11 +19,14 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Index />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/Globals" element={<Globals />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Categories" element={<Categories />} />
           <Route path="/Packaging" element={<Packaging />} />
           <Route path="/Client" element={<Client />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/Location" element={<Location />} />
+          <Route path="/Globals" element={<Globals />} />
+          <Route path="/Contract" element={<Contract />} />
         </Route>
       </Routes>
       <Footer />

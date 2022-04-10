@@ -2,6 +2,7 @@ import { AppBar,Container,Toolbar} from '@mui/material'
 import { Box } from '@mui/system'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import ServiceMenu from './servicemenu'
 
 
 
@@ -16,6 +17,7 @@ export const Navbar = () => {
           <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
           </NavLink>
         </Box>
+          <ServiceMenu />
         <Toolbar>
           {Arr?.map((item, index) => {
             return <Box key={index} direction='row' >
@@ -46,11 +48,7 @@ export const Navbar = () => {
 const Arr = [
   {
     title: 'About Us',
-    link: '#'
-  },
-  {
-    title: 'Services',
-    link: '#'
+    link: '/AboutUs'
   },
   {
     title: 'Categories',
@@ -70,7 +68,7 @@ const Arr = [
   },
   {
     title: 'Locations',
-    link: '#'
+    link: '/Location'
   },
   {
     title: 'Global Networks',
