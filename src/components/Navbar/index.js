@@ -1,4 +1,4 @@
-import { AppBar, Drawer, IconButton, Toolbar } from '@mui/material'
+import { AppBar, Container, Drawer, IconButton, Toolbar } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
@@ -14,13 +14,12 @@ export const Navbar = () => {
   return (
     <AppBar position="static" sx={{ boxShadow: 'none', background: '#FFFFFF', padding: '10px', marginX: 'auto' }} >
       <Toolbar variant="dense"  >
-        <Box flexGrow='1'
-        >
+        <Box flexGrow='1'>
           <NavLink to="/">
             <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
           </NavLink>
         </Box>
-        <Box flexDirection='row' sx={{ mr: 2, display: { md: 'none', lg: 'block' } }}
+        <Box flexDirection='row' sx={{ mr: 2, display: { xs: 'none', md:'none', lg: 'block' , xl:'block'}, justifyContent:'center', alignItems:'center' }}
         >
           <Toolbar >
             <NavLink

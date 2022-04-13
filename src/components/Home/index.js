@@ -3,23 +3,24 @@ import { About } from '../About'
 import { Banner } from '../Banner'
 import { Categories } from '../Categories'
 import { Services } from '../Services'
-import { Packaging } from '../Packaging'
-import { Clients } from '../Clients'
 import { FAQ } from '../FAQs'
 import { Enquiry } from '../Enquiry'
+import { Clients } from '../Clients'
 import WhyUs from '../WhyUs'
+import Packaging from '../Packaging'
+
 
 export const Index = () => {
   return (
     <div>
-        <Banner />
+        {/* <Banner /> */}
         <Categories />
         <About />
         <Services />
-        <WhyUs />
+        {/* <WhyUs /> */}
         <Packaging />
         <Clients />
-        {/* <FAQ /> */}
+        <FAQ />
         <Enquiry />
     </div>
   )

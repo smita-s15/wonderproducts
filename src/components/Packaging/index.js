@@ -1,13 +1,11 @@
-import { Container, Stack, Typography } from '@mui/material'
-import { Box } from '@mui/system'
-import React, { useState } from 'react'
-import { useStyles } from './Style';
+import React from 'react'
+import { Container, Box } from '@mui/material/'
+import Typography from '@mui/material/Typography'
 import Slider from "react-slick";
 
-export const Packaging = () => {
 
-    const classes = useStyles()
-      var settings = {
+const Packaging = () => {
+    var settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -40,71 +38,74 @@ export const Packaging = () => {
             }
         ]
     };
-
     return (
-        <Box flexDirection='column'  position='relative' sx={{ display: 'flex',  justifyContent: 'center', width: '100%', gap: '30px', alignItems:'center' }} marginTop={20} >
-        <Container fixed sx={{ margin: '10px auto', height:'30rem',  }}>
-            <Box >
-                <Typography variant='h3' ml={5}>
+        <>
+            <Container fixed sx={{ margin: '100px auto', }}>
+                <Typography variant="h3" color="initial">
                     Packaging
                 </Typography>
-            </Box>
-            <br />
-            <br />
-            <Slider {...settings}>
-                <Box  
-                    bgcolor='#B4C9CE17' 
-                    sx={{ display:'flex', 
-                    alignItems:'center',  
-                    justifyContent:'center',
-                    transition: '1s linear', "&:hover": {
-                        transform: 'scale(1.5)',
-                    }
-                }}
-                >
-                    <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="" style={{ width: '200px', height: '300px' }}  />
-                </Box>
-                <Box  
-                    bgcolor='#B4C9CE17' 
-                    sx={{ display:'flex', 
-                    alignItems:'center',  
-                    justifyContent:'center', 
-                    p:'10px' ,
-                    transition: '1s linear', "&:hover": {
-                        transform: 'scale(1.5)',
-                    }
-                }}
-                >
-                    <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="" style={{ width: '200px', height: '300px' }} />
-                </Box>
-                <Box  
-                    bgcolor='#B4C9CE17' 
-                    sx={{ display:'flex', 
-                    alignItems:'center',  
-                    justifyContent:'center', 
-                    p:'10px' ,
-                    transition: '1s linear', "&:hover": {
-                        transform: 'scale(1.5)',
-                    }
-                }}
-                >
-                    <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="" style={{ width: '150px', height: '200px' }} />
-                </Box>
-                <Box  
-                    bgcolor='#B4C9CE17' 
-                    sx={{ display:'flex', 
-                    alignItems:'center',  
-                    justifyContent:'center', 
-                    p:'10px' ,
-                    transition: '1s linear', "&:hover": {
-                        transform: 'scale(1.5)',
-                    }
-                }}
-                >
-                    <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="" style={{ width: '150px', height: '200px' }} />
-                </Box>
+                <br />
+                <Slider {...settings}>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
                 </Slider>
             </Container>
-        </Box>
+        </>
     )
 }
+
+export default Packaging

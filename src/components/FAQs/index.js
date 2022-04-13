@@ -4,80 +4,103 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import React from 'react'
-import { Box, Container, Grid } from '@mui/material';
-import { display } from '@mui/system';
+import {Container, Grid } from '@mui/material';
 
 export const FAQ = () => {
     return (
-        <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', }}  height='40rem' >
-            <Box>
-                <Typography variant='h3' ml={5}>
-                   FAQs
-                </Typography>
-            </Box>
-            <Grid container md={12}  sx={{display:'flex', justifyContent:'center', alignItems:'center' , gap:'20px'}} >
-                {faq.map((item, index)=> 
-                <Grid item  md={5}  >
-                <Accordion key={index} >
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography>{item.title}</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                            {item.desc}
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
-                </Grid>
-            )} 
+        <>
+        <Container fixed sx={{ margin: '100px auto', }}>
+            <Typography variant="h3" color="initial">
+                FAQs
+            </Typography>
+            <Grid container sm='10' md='12' lg='12' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '20px' , mt:'50px' }} >
+                {faq.map((item, index) =>
+                    <Grid item sm='10' md='5' lg='5'  >
+                        <Accordion key={index} sx={{margin:'10px'}} >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                            >
+                                <Typography variant='body1'>{item.title}</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography variant='body2' color='gray'>
+                                    {item.desc}
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    </Grid>
+                )}
+                {faq2.map((item, index) =>
+                    <Grid item sm='10' md='5' lg='5'  >
+                        <Accordion key={index} >
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                            >
+                                <Typography variant='body1'>{item.title}</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography variant='body2' color='gray'>
+                                    {item.desc}
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
+                    </Grid>
+                )}
             </Grid>
-        </Box>
+        </Container>
+        </>
     )
 }
 
 const faq = [
     {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
     },
     {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
     },
     {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
     },
     {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
     },
     {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-    },
-    {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-    },
-    {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-    },
-    {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-    },
-    {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
-    },
-    {
-        title:'Accordion 1',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
     },
 ]
+
+
+
+const faq2 = [
+    {
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+    },
+    {
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+    },
+    {
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+    },
+    {
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+    },
+    {
+        title: 'Question 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'
+    },
+]
+

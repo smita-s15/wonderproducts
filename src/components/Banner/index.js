@@ -17,7 +17,7 @@ export const Banner = () => {
   return (
     <>
       <Box className='banner' >
-        <Slider {...settings}>
+        {/* <Slider {...settings}>
         <div>
           <Page1 />
         </div>
@@ -26,11 +26,11 @@ export const Banner = () => {
         </div>
         <div>
           <Page3 />
-        </div>
+        </div> */}
         <div>
           <Page4 />
         </div>
-        </Slider>
+        {/* </Slider> */}
       </Box>
     </>
   )
@@ -168,7 +168,7 @@ const Page4 = () => {
           alignContent="center"
           wrap="wrap"
         >
-          <Grid item xl="3" md="3" xs="12" sx={{ padding: '100px 0 0 50px', }}>
+          <Grid item xl="3" md="10" xs="12" sx={{ padding: '100px 0 0 50px', }}>
             <Typography variant="h1" >
               Services
             </Typography>
@@ -180,7 +180,7 @@ const Page4 = () => {
               Explore!
             </Button>
           </Grid>
-          <Grid item xl="3" md="3" xs="12">
+          {/* <Grid item xl="3" md="3" xs="12">
             <Box sx={{ background: '#FED5C3', height: '100vh', gap: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <img src={require("../../ui/assets/Banner/Rectangle 4355.png")} alt="" style={{ width: '50%', height: '60%' }} />
               <Typography variant="h6" fontFamily="cinzel" fontWeight='bold'>
@@ -203,8 +203,8 @@ const Page4 = () => {
                 TURN KEY PROJECTS
               </Typography>
             </Box>
-          </Grid>
-        </Grid>
+          </Grid>*/}
+        </Grid> 
         <Box sx={{ position: 'absolute', left: '20px', bottom: '10px', }}>
           <img src={require("../../ui/assets/Banner/Wonder Products.png")} alt="" />
         </Box>

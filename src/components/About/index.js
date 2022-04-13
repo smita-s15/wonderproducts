@@ -4,10 +4,10 @@ import React from 'react'
 
 export const About = () => {
   return (
-    <Box position='relative' height='40rem' bgcolor='#FED5C3' display='flex' alignContent='center' justifyContent="center" marginTop={10}>
+    <Box position='relative'  bgcolor='#FED5C3' display='flex' alignContent='center' justifyContent="center" marginTop={10}>
       <Container fixed  sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
-        <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }} >
-          <Grid item xs='12' sm='12' md='7' lg='6' xl='6'  >
+        <Grid container xs='10' sm='12' md='12' lg='12' xl='12' sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }} >
+          <Grid item xs='10' sm='12' md='7' lg='6' xl='6'  >
             <Typography variant="h3"  >
               About Wonder Products
             </Typography>
@@ -19,7 +19,7 @@ export const About = () => {
               Explore!
             </Button>
           </Grid>
-          <Grid item xs='12' sm='12' md='7' lg='6' xl='6'  >
+          <Grid item xs='10' sm='12' md='7' lg='6' xl='6'  >
             <Box sx={{  display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
               <img src={require("../../ui/assets/About/set-skincare-bottles-containers 2 (1).png")} alt="" style={{width:'100%'}} />
             </Box>
