@@ -4,6 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import { Link } from 'react-router-dom';
+import { Typography } from '@mui/material';
 
 export default function ServiceMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -17,15 +18,25 @@ export default function ServiceMenu() {
 
   return (
     <div>
-      <Button
+      <Typography
         id="fade-button"
         aria-controls={open ? 'fade-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        style={({
+          fontFamily: "Overpass",
+          fontStyle: "normal",
+          fontSize: "15px",
+          lineHeight: "19px",
+          color: '#000',
+          textDecoration: 'none',
+          fontWeight: "500",
+          marginLeft: "40px"
+        })} 
       >
-        Service
-      </Button>
+        Services
+      </Typography>
       <Menu
         id="fade-menu"
         MenuListProps={{
@@ -44,15 +55,15 @@ export default function ServiceMenu() {
         </MenuItem>
         <MenuItem
           component="a"
-          href='/about'
+          href='/Private'
         >
-          Contract Manufacturing
+          Private
         </MenuItem>
         <MenuItem
           component="a"
-          href='/about'
+          href='/TurnProject'
         >
-          Contract Manufacturing
+          Turn key-projects
         </MenuItem>
       </Menu>
     </div>

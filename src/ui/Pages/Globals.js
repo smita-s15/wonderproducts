@@ -30,9 +30,9 @@ export const Globals = () => {
                             </Typography>
                         </Container>
                     </Box>
-                    <Grid container md={12} lg={12} xl={8} sx={{  display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '80px', mt:'-10%' }} >
+                    <Grid container sm='12' md='12' lg='12' xl='8' sx={{  display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '80px', mt:'-10%' }} >
                         {Arr.map((item, index) =>
-                            <Grid item key={index} md={4} lg={4} xl={2} bgcolor='#D2D1D7' width='300px' height='500px' marginTop={5} flexWrap='wrap'>
+                            <Grid item key={index} md={6} lg={4} xl={2} bgcolor='#D2D1D7' width='400px' height='500px' marginTop={5} flexWrap='wrap'>
                                 <Container sx={{ padding: '100px 0', display: 'flex', flexDirection: 'column', gap: '50px' , mt:'-10%'}}>
                                     <Typography variant='h3'  >
                                         {item.title}

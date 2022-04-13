@@ -10,6 +10,8 @@ import { Client} from "./ui/Pages/Clients";
 import { Location } from "./ui/Pages/Location";
 import { Contract } from "./ui/Pages/Services/Contract";
 import { AboutUs } from "./ui/Pages/About/AboutUs";
+import { Private } from "./ui/Pages/Services/Private";
+import { TurnProject } from "./ui/Pages/Services/TurnProject";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
           <Route path="/Location" element={<Location />} />
           <Route path="/Globals" element={<Globals />} />
           <Route path="/Contract" element={<Contract />} />
+          <Route path="/Private" element={<Private />} />
+          <Route path="/TurnProject" element={<TurnProject />} />
         </Route>
       </Routes>
       <Footer />

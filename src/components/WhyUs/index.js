@@ -6,10 +6,11 @@ import Typography from '@mui/material/Typography'
 const WhyUs = () => {
     return (
         <>
-            <Box sx={{ background: '#D2D1D7', height: '638px', display: 'flex', alignItems: 'center', margin: '100px auto' }}>
-                <Container fixed  >
+            <Box sx={{ background: '#D2D1D7',  display: 'flex', alignItems: 'center', margin: '100px auto' }}>
+                <Container fixed  sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}  >
                     <Grid
                         container
+                        xl="12" lg='12' md="12" xs="12"
                         spacing={10}
                         direction="row"
                         justifyContent="center"
@@ -17,10 +18,10 @@ const WhyUs = () => {
                         alignContent="center"
                         wrap="wrap"
                     >
-                        <Grid item xl="6" md="6" xs="12">
-                            <img src={require("../../ui/assets/WhyUs/unsplash_wawEfYdpkag (1).png")} alt="" style={{ width: '100%' }} />
+                        <Grid item xl="6" lg='6' md="6" xs="12" >
+                            <img src={require("../../ui/assets/WhyUs/unsplash_wawEfYdpkag (1).png")} alt="" style={{ width: '100%', }} />
                         </Grid>
-                        <Grid item xl="6" md="6" xs="12">
+                        <Grid item xl="6"lg='6' md="6" xs="12">
                             <Typography gutterBottom variant="h3" color="initial">
                                 Why us
                             </Typography>

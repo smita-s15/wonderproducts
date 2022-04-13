@@ -63,7 +63,7 @@ const theme = {
                     fontWeight: 700,
                     fontSize: "56px",
                     lineHeight: "75px",
-                    fontFamily: 'Cinzel',
+                    fontFamily: 'Overpass',
                     [defaultTheme.breakpoints.down(1200)]: {
                         color: 'red',
                     },
@@ -101,7 +101,8 @@ const theme = {
                     fontStyle: "normal",
                     fontWeight: 400,
                     fontSize: "18px",
-                    lineHeight: "23px"
+                    lineHeight: "23px",
+                    
                 },
                 body1: {
                     fontFamily: "Overpass",

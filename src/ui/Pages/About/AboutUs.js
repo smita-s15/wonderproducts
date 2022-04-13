@@ -7,20 +7,19 @@ import { useStyles } from './Styles'
 export const AboutUs = () => {
     return (
         <>
-            <Box className="half-banner">
-                <Container fixed position='relative'>
-                    <img src={require("../../assets/About/about us.png")} alt="" style={{ position: 'absolute', bottom: '10px' }}  />
-                    <Box position='absolute'  marginTop={35} sx={{display:'flex', justifyContent:'bottom'}} >
-                    <Typography variant='h2' >
-                        About Us
-                    </Typography>
-                    </Box>
+            <Box className="half-banner" bgcolor='red' width='100%' sx={{display:'flex', justifyContent:'flex-start', alignItems:'center'}} >
+                <Container fixed  sx={{display:'flex', justifyContent:'flex-start', alignItems:'center' , bgcolor:'red'}} >
+                    <img src={require("../../assets/About/about us.png")} alt="" style={{ position: 'absolute', width:'80%', bottom: '10px', }} />
+                        <Typography variant='h2' position='absolute' >
+                            About Us
+                        </Typography>
                 </Container>
             </Box>
-            <Container fixed>
+            <Container fixed sx={{ margin: '100px auto', }}>
                 <Grid
                     container
-                    spacing={3}
+                    xl="12" md="12" lg='12' xs="12"
+                    spacing={5}
                     direction="row"
                     justifyContent="center"
                     alignItems="center"
@@ -28,24 +27,20 @@ export const AboutUs = () => {
                     wrap="wrap"
                     sx={{ position: "relative" }}
                 >
-                    <Grid item xl="6" md="6" xs="12" sx={{ marginTop: '100px' }}>
+                    <Grid item xl="6" md="6" lg='6' xs="12" >
                         <Typography gutterBottom variant="h3">
-                            Company Overview
+                            Our Services
                         </Typography>
                         <br />
                         <Typography variant="h6" sx={{ opacity: '0.6' }}>
-                            One Stop Solution for White Label Contract Manufacturing of Personal Care, Hair Care, Oral Care, Home Care, Aerosol, Soaps & Detergents, Derma Cosmetics, Pharmaceuticals, Industrial Spray. We Work for Leading Cosmetics Companies From Both Domestic and International Locations.
-                        </Typography>
-                        <br />
-                        <Typography variant="h6" sx={{ opacity: '0.6' }}>
-                            One Stop Solution for White Label Contract Manufacturing of Personal Care, Hair Care, Oral Care, Home Care, Aerosol, Soaps & Detergents, Derma Cosmetics, Pharmaceuticals, Industrial Spray.
+                            Wonder Product is the prime contract manufacturer of cosmetics & personal care products. We help businesses flourish by formulating & developing without worrying about manufacturing many folds of units. We focus on customer satisfaction through quality, integrity & responsiveness. With our expertise in research & development, new product development, contract manufacturing, contract filling, custom blending along with warehousing & distribution of an array of products we aim to produce exceptional solutions.
                         </Typography>
                     </Grid>
-                    <Grid item xl="6" md="6" xs="12" >
-                        <img src={require("../../assets/About/unsplash_wawEfYdpkag (2).png")} alt="" style={{ position: 'absolute', top: '-100px' }} />
+                    <Grid item xl="6" md="6" lg='6' xs="12" >
+                        <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-100px', width:'50%' }} />
                     </Grid>
                 </Grid>
-            </Container>
+                </Container>
 
             <Box sx={{ margin: '200px' }} >
             </Box>
