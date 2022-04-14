@@ -50,9 +50,9 @@ export const Private = ({ children, props }) => {
                             </Box>
                         )}
                     </Grid>
-                    {/* <Grid item xl="6" md="6" xs="12"  >
+                    <Grid item xl="6" md="6" xs="12"  >
                         <img src={require("../../../../ui/assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-60px' }} />
-                    </Grid> */}
+                    </Grid>
                 </Grid>
             </Container>
 

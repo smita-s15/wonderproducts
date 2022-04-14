@@ -47,9 +47,9 @@ export const Contract = () => {
                             </Box>
                         )}
                     </Grid>
-                    {/* <Grid item xl="6" md="6" lg='6' xs="12" >
+                    <Grid item xl="6" md="6" lg='6' xs="12" >
                         <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-100px', width:'50%' }} />
-                    </Grid> */}
+                    </Grid>
                 </Grid>
                 </Container>
 

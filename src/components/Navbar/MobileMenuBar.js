@@ -32,7 +32,7 @@ export const MobileMenuBar = () => {
           keepMounted: true,
         }}
       >
-        <Box flexDirection='column' sx={{display:'flex', justifyContent:'flex-start', alignContent:'left', gap:'20px', m:'10px', padding:'100px '}} >
+        <Box flexDirection='column' sx={{display:'flex', justifyContent:'center', alignContent:'center', gap:'20px', m:'10px', padding:'100px '}} >
             <NavLink
               style={({
                 fontFamily: "Overpass",
@@ -42,10 +42,7 @@ export const MobileMenuBar = () => {
                 color: '#000',
                 textDecoration: 'none',
                 fontWeight: "500",
-                marginLeft: "30px",
                 flexWrap: 'wrap',
-                textAlign:'left',
-                margin:'10px'
               })}
               to='/AboutUs'
             >

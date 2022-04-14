@@ -33,7 +33,7 @@ function App() {
           <Route path="/TurnProject" element={<TurnProject />} />
         </Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }
