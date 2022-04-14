@@ -17,10 +17,10 @@ export const Categories = () => {
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
 
                 <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
-                    <Box position='absolute' width='100%'>
+                    <Box position='absolute' width='100%' marginX='auto'>
                         <img src={require("../../ui/assets/Categories/categories.png")} alt="" style={{ height: "100%", width: '100%' }} />
                     </Box >
-                    <Box sx={{ m: '100px auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }} position='absolute' width='50%'>
+                    <Box sx={{ m: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }} position='absolute' width='50%'>
                         <Typography variant='h1'  >
                             Categories
                         </Typography>

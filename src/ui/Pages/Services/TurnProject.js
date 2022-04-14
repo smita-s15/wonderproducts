@@ -45,12 +45,9 @@ export const TurnProject = () => {
                             PROCESS: UNDERSTANDING AND COMMUNICATION. In developing a formula, we benchmark existing formulas and competing products, and we formulate with the customer’s target price point in mind. The formulation process begins with a dialogue regarding the desired product attributes until the customer’s needs are fully understood.
                         </Typography>
                     </Grid>
-                    <Grid item xl="6" md="6" lg='6' xs="12" >
-                        <img src={require("../../assets/Services/privatelabel (1).cf1e5b65217c34e34122.png")} alt="" style={{ position: 'absolute', top: '-60px' }} />
-                    </Grid>
-                    <Grid item xl="6" md="6" lg='6' xs="12" >
-                        <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-100px', width:'50%' }} />
-                    </Grid>
+                    {/* <Grid item xl="6" md="6" lg='6' xs="12" >
+                        <img src={require("../../assets/Services/privatelabel (1).cf1e5b65217c34e34122.png")} alt="" style={{ position: 'absolute', top: '-90px' }} />
+                    </Grid> */}
                 </Grid>
             </Container>
 

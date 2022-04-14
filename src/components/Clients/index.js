@@ -40,7 +40,7 @@ export const Clients = () => {
     };
     return (
         <>
-            <Container fixed sx={{ margin: '100px auto', }}>
+            <Container fixed sx={{ margin: '100px auto',overflow:"hidden" }}>
                 <Typography variant="h3" color="initial">
                     Clients
                 </Typography>

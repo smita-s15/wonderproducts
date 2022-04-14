@@ -12,7 +12,7 @@ export const Navbar = () => {
 
 
   return (
-    <AppBar position="static" sx={{ boxShadow: 'none', background: '#FFFFFF', padding: '10px', marginX: 'auto' }} >
+    <AppBar position="static" sx={{ boxShadow: 'none', background: '#ffffff', padding: '10px', marginX: 'auto',width:"100vw" }} >
       <Toolbar variant="dense"  >
         <Box flexGrow='1'>
           <NavLink to="/">

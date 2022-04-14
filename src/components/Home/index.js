@@ -13,7 +13,7 @@ import Packaging from '../Packaging'
 export const Index = () => {
   return (
     <div>
-        {/* <Banner /> */}
+        <Banner />
         <Categories />
         <About />
         <Services />

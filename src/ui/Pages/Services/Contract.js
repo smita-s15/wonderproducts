@@ -11,7 +11,7 @@ export const Contract = () => {
             <Box className="half-banner" bgcolor='red' width='100%' sx={{display:'flex', justifyContent:'flex-start', alignItems:'center'}} >
                 <Container fixed  sx={{display:'flex', justifyContent:'flex-start', alignItems:'center' , bgcolor:'red'}} >
                     <img src={require("../../assets/Services/Services (1).png")} alt="" style={{ position: 'absolute', width:'80%', bottom: '10px', }} />
-                        <Typography variant='h2' position='absolute' >
+                        <Typography variant='h1' position='absolute' >
                             Contract Manufacturing
                         </Typography>
                 </Container>
@@ -47,9 +47,9 @@ export const Contract = () => {
                             </Box>
                         )}
                     </Grid>
-                    <Grid item xl="6" md="6" lg='6' xs="12" >
+                    {/* <Grid item xl="6" md="6" lg='6' xs="12" >
                         <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-100px', width:'50%' }} />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
                 </Container>
 

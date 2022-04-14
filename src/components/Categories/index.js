@@ -7,7 +7,6 @@ export const Categories = () => {
     const classes = useStyles()
     const [active, setActive] = React.useState(false)
     const [activeComp, setActiveComp] = React.useState("")
-    // console.log("hey", activeComp)
     return (
         <>
             <Container fixed sx={{ margin: '100px auto', }}>
@@ -15,8 +14,8 @@ export const Categories = () => {
                     Categories
                 </Typography>
                 <br />
-                <Box sx={{ display: 'flex', gap: '30px', justifyContent: 'space-between', flexWrap: 'wrap' }}>
-                    {new Array(5).fill("").map((item, index, i) => (
+                <Box sx={{ display: 'flex', gap: '50px', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+                    {new Array(10).fill("").map((item, index,i) => (
                         <Box className={classes.card} onMouseOut={() => { setActive(false); setActiveComp("") }} 
                         onMouseOver={() => { setActive(true); setActiveComp(i) }} key={index} >
                             <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
@@ -44,24 +43,44 @@ export const Categories = () => {
 
 const Data = [
     {
-        name: '',
-        image: ''
+        name: 'Hair Care',
+        image:  <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
     },
     {
-        name: '',
-        image: ''
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
     },
     {
-        name: '',
-        image: ''
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
     },
     {
-        name: '',
-        image: ''
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
     },
     {
-        name: '',
-        image: ''
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
+    },
+    {
+        name: 'Hair Care',
+        image:  <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
+    },
+    {
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
+    },
+    {
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
+    },
+    {
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
+    },
+    {
+        name: 'Hair Care',
+        image: <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
     },
 ]
 const Details = [

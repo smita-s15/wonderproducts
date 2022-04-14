@@ -32,7 +32,7 @@ export const Enquiry = () => {
                             <Box sx={{ display: 'flex', alignItems: 'center', justifyContent:'space-between' }}>
                                 <Box>
                                     <Typography variant='h6' > First Name</Typography>
-                                    <TextField placeholder="Enter First Name" variant="outlined" size="small" style={{ backgroundColor: 'white', borderRadius: '4px' }} />
+                                    <TextField placeholder="Enter First Name" variant="outlined" size="small"   style={{ backgroundColor: 'white', borderRadius: '4px' , }} />
                                 </Box>
                                 <Box>
                                     <Typography variant='h6'> Last Name</Typography>
