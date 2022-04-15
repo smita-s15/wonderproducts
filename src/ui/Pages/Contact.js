@@ -37,7 +37,7 @@ export const Contact = () => {
                 <TextField
                   multiline
                   rows={4}
-                  placeholder="write message.."
+                  placeholder="Write Message"
                   style={{ backgroundColor: 'white', border: 'none', borderRadius: '4px', width: '100%', color: 'gray' }}
                 />
                 <Box>
