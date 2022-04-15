@@ -10,7 +10,7 @@ export const AboutUs = () => {
             <Box className="half-banner" bgcolor='red' width='100%' sx={{display:'flex', justifyContent:'flex-start', alignItems:'center'}} >
                 <Container fixed  sx={{display:'flex', justifyContent:'flex-start', alignItems:'center' , bgcolor:'red'}} >
                     <img src={require("../../assets/About/about us.png")} alt="" style={{ position: 'absolute', width:'80%', bottom: '10px', }} />
-                        <Typography variant='h2' position='absolute' >
+                        <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }} >
                             About Us
                         </Typography>
                 </Container>

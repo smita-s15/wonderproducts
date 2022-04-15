@@ -10,14 +10,13 @@ export const Globals = () => {
         <>
             <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
                 <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', }} >
-                    <img src={require("../../ui/assets/Globals/Global Network.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h1' position='absolute' sx={{ marginBottom: '-10%' }}>
+                    <img src={require("../../ui/assets/Globals/Global Network.png")} alt="" style={{ position: 'absolute', width: '100%', height:'170px', bottom: '10px', }} />
+                    <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }}>
                         Global Networks
                     </Typography>
                 </Container>
             </Box>
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', overflow: 'hidden' }}  >
-
                 <Box bgcolor='#FED5C3' width='100%' height='400px' marginTop={10}>
                     <Container fixed sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                         <Typography variant='h3'  >

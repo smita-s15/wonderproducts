@@ -3,8 +3,6 @@ import { Container, Box, Grid, } from '@mui/material'
 import Typography from '@mui/material/Typography'
 import { Clients } from '../../../../components/Clients'
 import CircleIcon from '@mui/icons-material/Circle';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Slider from "react-slick";
 
 
@@ -16,8 +14,8 @@ export const Private = ({ children, props }) => {
             <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
                 <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', bgcolor: 'red' }} >
                     <img src={require("../../../../ui/assets/Services/Services (1).png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h1' position='absolute' sx={{ marginBottom: '-10%' }} >
-                        Private label
+                    <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }} >
+                        Private Label
                     </Typography>
                 </Container>
             </Box>
@@ -115,6 +113,7 @@ const DataComponent = (props) => {
         fade: true,
         infinite: true,
         autoplay: true,
+        autoplayspeed: 2000,
         speed: 500,
         slidesToShow:2,
         slidesToScroll: 1,
@@ -122,7 +121,7 @@ const DataComponent = (props) => {
     return (
         <>
             <Grid item sm='12' md='12' lg='6'>
-                <Typography variant="h3" color="initial" opacity='0.6'>
+                <Typography variant="h2" color="initial" opacity='0.6'>
                     {title}
                 </Typography>
                 <Typography variant='h6'>
@@ -142,9 +141,9 @@ const DataComponent = (props) => {
                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
                         <img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />
                     </Box>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
+                    {/* <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
                         <img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />
-                    </Box>
+                    </Box> */}
                 </Slider>
             </Grid>
 

@@ -17,7 +17,7 @@ export const Categories = () => {
          <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
                 <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center',  }} >
                     <img src={require("../../ui/assets/Categories/categories.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h1' position='absolute'  sx={{marginBottom:'-10%'}}>
+                    <Typography variant='h2' position='absolute'  sx={{marginBottom:'-10%'}}>
                         Categories
                     </Typography>
                 </Container>
@@ -29,7 +29,7 @@ export const Categories = () => {
                             <Box className={classes.card} onMouseOut={() => { setActive(false); setActiveComp("") }}
                                 onMouseOver={() => { setActive(true); setActiveComp(i) }} key={index} >
                                 <img src={require("../../ui/assets/Categories/hygiene-products.png")} alt="" />
-                                <Typography variant="h5" color="initial">
+                                <Typography variant="h4" color="initial">
                                     {i}
                                 </Typography>
                             </Box>

@@ -59,11 +59,11 @@ const theme = {
                     position: 'absolute', bottom: '0', border: '1px solid red',
                 },
                 h1: {
-                    fontStyle: "Playfair Display",
-                    fontWeight: 700,
+                    fontStyle: "Overpass",
+                    fontWeight: 900,
                     fontSize: "56px",
                     lineHeight: "75px",
-                    fontFamily: 'Overpass',
+                    fontFamily: 'Playfair Display',
                     [defaultTheme.breakpoints.down(1200)]: {
                         color: 'red',
                     },
@@ -71,14 +71,14 @@ const theme = {
                 h2: {
                     fontFamily: 'Cinzel',
                     fontStyle: "normal",
-                    fontWeight: 700,
+                    fontWeight: 900,
                     fontSize: "48px",
                     lineHeight: "64px",
                 },
                 h3: {
                     fontFamily: 'Playfair Display',
                     fontStyle: "normal",
-                    fontWeight: 700,
+                    fontWeight: 900,
                     fontSize: "38px",
                     lineHeight: "51px"
                 },

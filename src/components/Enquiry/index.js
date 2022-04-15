@@ -20,7 +20,7 @@ export const Enquiry = () => {
                 >
                     <Grid item xl="6" lg='6' md="12" xs="12" >
                         <Typography variant="h3" >
-                            Enquiry Now
+                            Enquiry now
                         </Typography>
                         <br />
                         <Typography variant='body1'>
