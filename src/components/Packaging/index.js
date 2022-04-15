@@ -9,7 +9,9 @@ const Packaging = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow:4,
+        slidesToShow: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
         slidesToScroll: 1,
         responsive: [
             {
@@ -39,8 +41,8 @@ const Packaging = () => {
         ]
     };
     return (
-        <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-            <Container fixed sx={{ margin: '100px auto',overflow:"hidden",  }}>
+        <>
+            <Container fixed sx={{ margin: '100px auto', }}>
                 <Typography variant="h3" color="initial">
                     Packaging
                 </Typography>
@@ -51,67 +53,60 @@ const Packaging = () => {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                        <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
                     </Box>
                     <Box sx={{
                         transition: '1s linear', "&:hover": {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                         <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" />
                     </Box>
                     <Box sx={{
                         transition: '1s linear', "&:hover": {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                        <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" />
                     </Box>
                     <Box sx={{
                         transition: '1s linear', "&:hover": {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                        <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
                     </Box>
                     <Box sx={{
                         transition: '1s linear', "&:hover": {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                        <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" />
                     </Box>
                     <Box sx={{
                         transition: '1s linear', "&:hover": {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                         <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
                     </Box>
                     <Box sx={{
                         transition: '1s linear', "&:hover": {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                        <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
                     </Box>
                     <Box sx={{
                         transition: '1s linear', "&:hover": {
                             transform: 'scale(1.5)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                         <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" />
                     </Box>
                 </Slider>
             </Container>
-        </Box>
+        </>
     )
 }
 
