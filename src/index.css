@@ -7,8 +7,15 @@
 body {
   font-family: Overpass;
 }
+.banner {
+  background-image: url("./ui/assets/Background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 .half-banner{
-  background-image: url("./ui/assets/About/unsplash_PTRzqc_h1r4.png");
+  background-image: url("./ui/assets/Background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

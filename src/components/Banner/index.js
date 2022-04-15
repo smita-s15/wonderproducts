@@ -39,7 +39,7 @@ export const Banner = () => {
 const Page1 = () => {
   return (
     <>
-      <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE'>
+      <Box sx={{ position: 'relative', height: '100vh' }} className='banner'>
         <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
           <Box sx={{ width: '70%', display: 'flex', justifyContent: 'center', flexDirection: 'column', mt: {md:'9%' ,lg:'15%'} }}>
             <Typography variant="h1" color="initial">
@@ -79,7 +79,7 @@ const Page1 = () => {
 
 const Page2 = () => {
   return (
-    <Box sx={{ position: 'relative', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }} bgcolor='#B4C9CE' >
+    <Box sx={{ position: 'relative', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }} className='banner' >
       <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
         <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }} >
           <Grid item xs='12' sm='12' md='6' lg='5' xl='6'  >
@@ -119,7 +119,7 @@ const Page2 = () => {
 
 const Page3 = () => {
   return (
-    <Box sx={{ position: 'relative', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }} bgcolor='#B4C9CE' >
+    <Box sx={{ position: 'relative', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }} className='banner' >
       <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
         <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }} >
           <Grid item xs='12' sm='12' md='6' lg='5' xl='6'  >
@@ -160,7 +160,7 @@ const Page4 = () => {
 
     <>
 
-      <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE'>
+      <Box sx={{ position: 'relative', height: '100vh' }} className='banner'>
         <Grid
           container
           xl="12" lg='12' md="12" xs="12"
