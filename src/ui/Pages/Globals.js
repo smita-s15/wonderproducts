@@ -17,8 +17,8 @@ export const Globals = () => {
                 </Container>
             </Box>
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', overflow: 'hidden' }}  >
-                <Box bgcolor='#FED5C3' width='100%' height='400px' marginTop={10}>
-                    <Container fixed sx={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                <Box bgcolor='#FED5C3' width='100%' mt={20} height='400px' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', }}>
+                    <Container fixed sx={{ marginTop:'10px',  display: 'flex', flexDirection: 'column', gap: '20px',}}>
                         <Typography variant='h3'  >
                             Global Network
                         </Typography>
@@ -27,7 +27,7 @@ export const Globals = () => {
                         </Typography>
                     </Container>
                 </Box>
-                <Grid container xs='12' sm='12' md='12' lg='12' xl='8' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '80px', mt: '-10%', }} >
+                <Grid container xs='12' sm='12' md='12' lg='12' xl='8' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', gap: '80px', mt: '-7%', }} >
                     {Arr.map((item, index) =>
                         <Grid item key={index} xs='12' sm='12' md={6} lg={4} xl={2} bgcolor='#D2D1D7' width='400px' height='500px' marginTop={5} flexWrap='wrap' >
                             <Container sx={{ display: 'flex', flexDirection: 'column', gap: '50px', margin: '10px' }}>
