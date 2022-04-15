@@ -72,7 +72,7 @@ const theme = {
                     },
                 },
                 h2: {
-                    fontFamily: 'Cinzel',
+                    fontFamily: 'Overpass',
                     fontStyle: "normal",
                     fontWeight: 900,
                     fontSize: "48px",
