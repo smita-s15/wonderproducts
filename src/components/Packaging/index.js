@@ -2,14 +2,17 @@ import React from 'react'
 import { Container, Box } from '@mui/material/'
 import Typography from '@mui/material/Typography'
 import Slider from "react-slick";
+import { useStyles } from './Style';
+
 
 
 const Packaging = () => {
+    const classes = useStyles();
     var settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 3,
         autoplay: true,
         autoplaySpeed: 2000,
         slidesToScroll: 1,
@@ -40,6 +43,26 @@ const Packaging = () => {
             }
         ]
     };
+    const Data = [
+        {
+            img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
+        },
+        {
+            img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
+        },
+        {
+            img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
+        },
+        {
+            img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
+        },
+        {
+            img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
+        },
+        {
+            img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
+        },
+    ]
     return (
         <>
             <Container fixed sx={{ margin: '100px auto', }}>
@@ -48,66 +71,18 @@ const Packaging = () => {
                 </Typography>
                 <br />
                 <Slider {...settings}>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                         <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                         <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                         <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" />
-                    </Box>
+                    {Data.map((item, index) =>
+
+                        <Box key={index} >
+                            {item.img}
+                        </Box>
+                    )}
                 </Slider>
             </Container>
         </>
     )
-}
 
+
+
+}
 export default Packaging

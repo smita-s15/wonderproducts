@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography'
 import { Clients } from '../../../../components/Clients'
 import CircleIcon from '@mui/icons-material/Circle';
 import Slider from "react-slick";
+import { useStyles } from './style';
 
 
 
@@ -58,7 +59,6 @@ export const Private = ({ children, props }) => {
             <Box sx={{ margin: '200px' }} >
             </Box>
             <Container fixed sx={{ margin: '100px auto' }} {...props}>
-                <Grid container sm='' md='12' lg='12'   >
                     {Arr.map((item, index) => {
                         return <Grid container sm='12' key={index} >
                             <Grid item sm='12'>
@@ -75,7 +75,6 @@ export const Private = ({ children, props }) => {
                             </Grid>
                         </Grid>
                     })}
-                </Grid>
             </Container>
             <Clients />
         </>
@@ -106,7 +105,9 @@ const ArrContract = [
     },
 ]
 const DataComponent = (props) => {
+    const classes = useStyles();
     const { title, text1, text2, text3, image, ...rest } = props
+
     const settings = {
         arrows: false,
         dots: true,
@@ -115,9 +116,30 @@ const DataComponent = (props) => {
         autoplay: true,
         autoplayspeed: 2000,
         speed: 500,
-        slidesToShow:2,
+        slidesToShow: 2,
         slidesToScroll: 1,
     };
+
+    // const Data = [
+    //     {
+    //         img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
+    //     },
+    //     {
+    //         img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
+    //     },
+    //     {
+    //         img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
+    //     },
+    //     {
+    //         img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
+    //     },
+    //     {
+    //         img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
+    //     },
+    //     {
+    //         img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
+    //     },
+    // ]
     return (
         <>
             <Grid item sm='12' md='12' lg='6'>
@@ -137,14 +159,14 @@ const DataComponent = (props) => {
                 </Typography>
             </Grid>
             <Grid item sm='12' md='12' lg='6' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} padding='10px auto' borderRadius={5}>
-                <Slider {...settings}>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
-                        <img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />
-                    </Box>
-                    {/* <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
-                        <img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />
-                    </Box> */}
-                </Slider>
+                {/* <Slider {...settings}>
+                    {Data.map((item, index) =>
+
+                        <Box key={index} >
+                            {item.img}
+                        </Box>
+                    )}
+                </Slider> */}
             </Grid>
 
         </>

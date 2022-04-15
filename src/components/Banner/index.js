@@ -41,7 +41,7 @@ const Page1 = () => {
     <>
       <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE'>
         <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
-          <Box sx={{ width: '70%', display: 'flex', justifyContent: 'center', flexDirection: 'column', mt: '8%' }}>
+          <Box sx={{ width: '70%', display: 'flex', justifyContent: 'center', flexDirection: 'column', mt: {md:'9%' ,lg:'15%'} }}>
             <Typography variant="h1" color="initial">
               <b>
                 India’s leading contract
@@ -67,9 +67,9 @@ const Page1 = () => {
         <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' }}>
           <img src={require("../../ui/assets/Banner/wonder.png")} alt="" />
         </Box>
-        <Box sx={{ position: 'absolute', left: '20px', bottom: '10px', }}>
-          <img src={require("../../ui/assets/Banner/Wonder Products.png")} alt="" />
-        </Box>
+        <Box sx={{ position: 'absolute', left: '10px', bottom: '10px', }}>
+        <img src={require("../../ui/assets/Banner/Wonder Products.png")} alt="" />
+      </Box>
       </Box>
     </>
   )
@@ -110,7 +110,7 @@ const Page2 = () => {
       <Box sx={{ position: 'absolute', left: '50%', top: '0.1%' }}  >
         <img src={require("../../ui/assets/Banner/Vector.png")} alt="" />
       </Box>
-      <Box sx={{ position: 'absolute', left: '20%', bottom: '0.1%' }}  >
+      <Box sx={{ position: 'absolute', left: '5%', bottom: '0.1%' }}  >
         <img src={require("../../ui/assets/Banner/Flower.png")} alt="" />
       </Box>
     </Box>
@@ -148,7 +148,7 @@ const Page3 = () => {
       <Box sx={{ position: 'absolute', left: '50%', top: '0.1%' }}  >
         <img src={require("../../ui/assets/Banner/Vector.png")} alt="" />
       </Box>
-      <Box sx={{ position: 'absolute', left: '20%', bottom: '0.1%' }}  >
+      <Box sx={{ position: 'absolute', left: '5%', bottom: '0.1%' }}  >
         <img src={require("../../ui/assets/Banner/Flower.png")} alt="" />
       </Box>
     </Box>
