@@ -14,18 +14,15 @@ export const Categories = () => {
 
     return (
         <>
+         <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
+                <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center',  }} >
+                    <img src={require("../../ui/assets/Categories/categories.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
+                    <Typography variant='h1' position='absolute'  sx={{marginBottom:'-10%'}}>
+                        Categories
+                    </Typography>
+                </Container>
+            </Box>
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
-
-                <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
-                    <Box position='absolute' width='100%' marginX='auto'>
-                        <img src={require("../../ui/assets/Categories/categories.png")} alt="" style={{ height: "100%", width: '100%' }} />
-                    </Box >
-                    <Box sx={{ m: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }} position='absolute' width='50%'>
-                        <Typography variant='h1'  >
-                            Categories
-                        </Typography>
-                    </Box>
-                </Box>
                 <Container fixed sx={{ margin: '100px auto', }}>
                     <Box sx={{ display: 'flex', gap: '30px', justifyContent: 'space-between', flexWrap: 'wrap' }}>
                         {new Array(5).fill("").map((item, index, i) => (

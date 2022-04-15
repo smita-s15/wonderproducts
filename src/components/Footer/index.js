@@ -12,20 +12,20 @@ import { FaInstagram } from "react-icons/fa"
 
 export const Footer = () => {
     return (
-        <Box  bgcolor='#000000' alignContent='center' >
-             <Container fixed  sx={{ padding: '100px', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'row', }}>
-            <Grid container xs='12' sm='12' md='10' lg='12' sx={{  display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' ,  alignContent:'center', gap:'20px'}} >
-                <Grid item xs='12' sm='12' md='4' lg='4' >
-                        <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
+        <Box  bgcolor='#000000' alignContent='center' padding='70px 0' >
+             <Container fixed  sx={{  display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'row', }}>
+            <Grid container xs='12' sm='12' md='10' lg='12' sx={{  display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' ,  alignContent:'center',}} >
+                <Grid item xs='12' sm='12' md='4' lg='4' sx={{display:'flex', justifyContent:'flex-start', flexDirection:'column'}} >
+                        <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" width={300}  />
                         <Typography sx={{ color: 'white', mt: '30px' }}>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae duis risus consequat ut.
                         </Typography>
-                        <Typography sx={{ color: 'white', mt: '70px' }}>
+                        <Typography sx={{ color: 'white', mt: '50px' }}>
                             Wonder Products© Copyright 2022.
                         </Typography>
                 </Grid>
-                <Grid item xs='12' sm='4' md='3' lg='3'>
-                    <Typography variant='h6' sx={{ color: 'white' }}>
+                <Grid item xs='12' sm='4' md='3' lg='4' sx={{display:'flex', justifyContent:'flex-start', flexDirection:'column'}}>
+                    <Typography variant='h5' sx={{ color: 'white' }}>
                         Quick Links
                     </Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px', mt: '30px' }}>
@@ -52,8 +52,8 @@ export const Footer = () => {
                         </Stack>
                     </Box>
                 </Grid>
-                <Grid item xs='12' sm='4' md='2' lg='1' >
-                    <Typography variant='h6' sx={{ color: 'white' }}>
+                <Grid item xs='12' sm='4' md='2' lg='' sx={{display:'flex', justifyContent:'flex-start', flexDirection:'column'}} >
+                    <Typography variant='h5' sx={{ color: 'white' }}>
                         Social Links
                     </Typography>
                     <Stack mt='20px' spacing={2}>

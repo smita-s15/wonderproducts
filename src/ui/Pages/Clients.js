@@ -5,26 +5,24 @@ import React from 'react'
 export const Client = () => {
     return (
         <>
-            <Box flexDirection='column'  bgcolor='#FBFBFB' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
-                <Box width='100%' height='50vh' bgcolor='#B4C9CE' sx={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'left' }} position='relative'>
-                    <Box position='absolute' width='100%'>
-                        <img src={require("../../ui/assets/Clients/clients.png")} alt="" style={{ height: "100%", width: '100%' }} />
-                    </Box >
-                    <Box sx={{ m: '100px auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }} position='absolute' width='50%'>
-                        <Typography variant='h1'  >
-                            Clients
-                        </Typography>
-                    </Box>
-                </Box>
+        <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
+                <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center',  }} >
+                    <img src={require("../../ui/assets/Clients/clients.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
+                    <Typography variant='h1' position='absolute'  sx={{marginBottom:'-10%'}}>
+                    Clients
+                    </Typography>
+                </Container>
+            </Box>
+            <Box flexDirection='column' bgcolor='#FBFBFB' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
                 <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >\
                     <Grid container xl={12} lg={12} md={12} sm={12} gap='100px'>
                         {details.map((item, index) =>
-                            <Grid key={index} xl={3} lg={3} md={5} sm={6} flexDirection='column' item bgcolor='#FFFFFF' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '30%', height: '300px', gap: '10px',borderRadius:'10px',  }} boxShadow='10px'>
+                            <Grid key={index} xl={3} lg={3} md={5} sm={6} flexDirection='column' item bgcolor='#FFFFFF' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px auto', width: '30%', height: '300px', gap: '10px', borderRadius: '10px', }} boxShadow='10px'>
 
-                                <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor:'#B4C9CE29', alignItems:'center', height:'200px', width:'250px', margin:'10px' , borderRadius:'10px', padding:'20px' }}>
-                                        {item.image}
+                                <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor: '#B4C9CE29', alignItems: 'center', height: '200px', width: '250px', margin: '10px', borderRadius: '10px', padding: '20px' }}>
+                                    {item.image}
                                 </Box>
-                                <Box sx={{ display: 'flex', justifyContent: 'left', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%',padding:'10px' }}>
+                                <Box sx={{ display: 'flex', justifyContent: 'left', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%', padding: '10px' }}>
                                     <Typography variant='h5' textAlign='left'>
                                         {item.title}
                                     </Typography>
@@ -42,7 +40,7 @@ export const Client = () => {
 
 const details = [
     {
-        image: <img src={require("../../ui/assets/Clients/kindpng_7269149 1.png")} alt=""  />,
+        image: <img src={require("../../ui/assets/Clients/kindpng_7269149 1.png")} alt="" />,
         title: 'Himalaya'
     },
     {

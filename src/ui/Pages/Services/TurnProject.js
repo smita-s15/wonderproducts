@@ -11,7 +11,7 @@ export const TurnProject = () => {
             <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
                 <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', bgcolor: 'red' }} >
                     <img src={require("../../assets/Services/Services (1).png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h1' position='absolute' >
+                    <Typography variant='h1' position='absolute'  sx={{marginBottom:'-10%'}}>
                         Turn Key Project
                     </Typography>
                 </Container>
@@ -138,7 +138,7 @@ export const TurnProject = () => {
                                     Our lab and manufacturing plant is FDA Certified and we are compliant with GMP (Good Manufcaturer Practices). We maintain a fully functioning microbiology lab which gives us the capacity to formulate OTC (over the counter) products. Chemco has implemented and maintains the following:
                                 </Typography>
                                 {ArrContract.map((item, index) =>
-                                    <Box flexDirection='row' sx={{ opacity: '0.6', display: 'flex', gap: '20px', alignItems: 'center' }} marginTop={1} >
+                                    <Box flexDirection='row'  sx={{ opacity: '0.6', display: 'flex', gap: '20px', justifyItems:'center', alignItems: 'center' }} marginTop={1} >
                                         <CircleIcon sx={{ width: '10px', height: '10px' }} />
                                         <Typography variant="h6"  >
                                             {item.title}

@@ -9,7 +9,7 @@ const Packaging = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow:4,
         slidesToScroll: 1,
         responsive: [
             {
@@ -39,8 +39,8 @@ const Packaging = () => {
         ]
     };
     return (
-        <>
-            <Container fixed sx={{ margin: '100px auto',overflow:"hidden" }}>
+        <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+            <Container fixed sx={{ margin: '100px auto',overflow:"hidden",  }}>
                 <Typography variant="h3" color="initial">
                     Packaging
                 </Typography>
@@ -102,9 +102,16 @@ const Packaging = () => {
                     }}>
                         <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
                     </Box>
+                    <Box sx={{
+                        transition: '1s linear', "&:hover": {
+                            transform: 'scale(1.5)',
+                        }
+                    }}>
+                        <img src={require("../../ui/assets/Packaging/shampoo-0.png")} alt="clients" />
+                    </Box>
                 </Slider>
             </Container>
-        </>
+        </Box>
     )
 }
 

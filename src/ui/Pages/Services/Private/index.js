@@ -10,12 +10,13 @@ import Slider from "react-slick";
 
 
 export const Private = ({ children, props }) => {
+
     return (
         <>
             <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
                 <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', bgcolor: 'red' }} >
                     <img src={require("../../../../ui/assets/Services/Services (1).png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h1' position='absolute' >
+                    <Typography variant='h1' position='absolute' sx={{ marginBottom: '-10%' }} >
                         Private label
                     </Typography>
                 </Container>
@@ -68,13 +69,13 @@ export const Private = ({ children, props }) => {
                                 </FirstComponent>
 
                             </Grid>
-                            
+
                             <Grid item sm='12' >
-                            <SecondComponent  >
-                                {item.DataComponentTwo}
-                            </SecondComponent>
+                                <SecondComponent  >
+                                    {item.DataComponentTwo}
+                                </SecondComponent>
                             </Grid>
-                            </Grid>
+                        </Grid>
                     })}
                 </Grid>
             </Container>
@@ -114,9 +115,8 @@ const DataComponent = (props) => {
         fade: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow:2,
         slidesToScroll: 1,
     };
     return (
@@ -137,14 +137,15 @@ const DataComponent = (props) => {
                     {text2}
                 </Typography>
             </Grid>
-            <Grid item sm='12' md='12' lg='6' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}  padding='10px auto' borderRadius={5}>
-                <ArrowBackIosIcon />
-                {/* <Slider {...settings}> */}
-                <Box  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
-                    <img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />
-                </Box>
-                {/* </Slider> */}
-                <ArrowForwardIosIcon />
+            <Grid item sm='12' md='12' lg='6' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} padding='10px auto' borderRadius={5}>
+                <Slider {...settings}>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
+                        <img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />
+                    </Box>
+                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} bgcolor='#B4C9CE' width='60%' borderRadius={5} >
+                        <img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />
+                    </Box>
+                </Slider>
             </Grid>
 
         </>
@@ -223,15 +224,15 @@ const Arr = [
     },
     {
         DataComponentOne: <DataComponent
-        title='Baby Care'
-        text1=' Hair Care Products are our specialty, with over 10,000 proven formulations used by the top brands in the Industry, we are positive we can create a Hair care line to suit your needs.'
+            title='Baby Care'
+            text1=' Hair Care Products are our specialty, with over 10,000 proven formulations used by the top brands in the Industry, we are positive we can create a Hair care line to suit your needs.'
             text2='Our products are created using only the best ingredients and formulations as well as quality control, microbiology and salon testing, to make sure our clients only receive the best products, and the best results, every time.'
             text3='Constant research and development, makes us extremely competitive as we come up with new products to revolutionize the market and improve the quality of lives of the end user.'
             image={<img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />}
-            />,
-            
+        />,
+
         DataComponentTwo: <DataComponent
-        title='Fragnance'
+            title='Fragnance'
             text1=' Hair Care Products are our specialty, with over 10,000 proven formulations used by the top brands in the Industry, we are positive we can create a Hair care line to suit your needs.'
             text2='Our products are created using only the best ingredients and formulations as well as quality control, microbiology and salon testing, to make sure our clients only receive the best products, and the best results, every time.'
             text3='Constant research and development, makes us extremely competitive as we come up with new products to revolutionize the market and improve the quality of lives of the end user.'
@@ -246,7 +247,7 @@ const Arr = [
             text3='Constant research and development, makes us extremely competitive as we come up with new products to revolutionize the market and improve the quality of lives of the end user.'
             image={<img src={require("../../../../ui/assets/Services/A7111 1.png")} alt="" />}
         />,
-    
+
         DataComponentTwo: <DataComponent
             title='Veterinary Products'
             text1=' Hair Care Products are our specialty, with over 10,000 proven formulations used by the top brands in the Industry, we are positive we can create a Hair care line to suit your needs.'

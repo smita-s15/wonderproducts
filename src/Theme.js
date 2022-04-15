@@ -59,7 +59,7 @@ const theme = {
                     position: 'absolute', bottom: '0', border: '1px solid red',
                 },
                 h1: {
-                    fontStyle: "normal",
+                    fontStyle: "Playfair Display",
                     fontWeight: 700,
                     fontSize: "56px",
                     lineHeight: "75px",

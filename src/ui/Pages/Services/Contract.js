@@ -11,7 +11,7 @@ export const Contract = () => {
             <Box className="half-banner" bgcolor='red' width='100%' sx={{display:'flex', justifyContent:'flex-start', alignItems:'center'}} >
                 <Container fixed  sx={{display:'flex', justifyContent:'flex-start', alignItems:'center' , bgcolor:'red'}} >
                     <img src={require("../../assets/Services/Services (1).png")} alt="" style={{ position: 'absolute', width:'80%', bottom: '10px', }} />
-                        <Typography variant='h1' position='absolute' >
+                        <Typography variant='h1' position='absolute' sx={{marginBottom:'-10%'}} >
                             Contract Manufacturing
                         </Typography>
                 </Container>

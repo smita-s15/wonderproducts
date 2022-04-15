@@ -1,30 +1,24 @@
-import { Container,  Grid,  Typography } from '@mui/material'
-import { Box,} from '@mui/system'
+import { Container, Grid, Typography } from '@mui/material'
+import { Box, } from '@mui/system'
 import React from 'react'
 
 export const Services = () => {
     return (
-        <Box  bgcolor='#FBFBFB' alignContent='center' >
-             <Container fixed  sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'column' }}>
-            <Typography variant='h3'   >Our Services</Typography>
-            <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop:'60px',  gap:'100px' }}>
-                {services.map((item, index) => <Grid item xs='6' sm='6' md='6' lg='3' xl='3' margin={2} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row', padding:'10px auto' ,bgcolor:'#FFFFFF', borderRadius:'10px', }}  >
-                    <Box key={index}   margin={2}  sx={{justifyContent: 'center', display: 'flex'}} flexDirection='column'  >
-                        <Box flexDirection='column' sx={{ justifyContent: 'center', display: 'flex',}}  >
-                            <Typography variant='h4' >
-                                {item.title}
-                            </Typography>
-                        </Box>
-                        <Box width='25%' border='3px solid #FED5C3'  bgcolor='#FED5C3'  mt={1}   />
-                        <Box margin='30px auto'>
-                        <Typography >
+        <Box position='relative' bgcolor='#F8FAFB' display='flex' alignContent='center' justifyContent="center" marginTop={10}>
+            <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start',  flexDirection:'column' }}>
+                <Typography variant='h3'>Our Services</Typography>
+                <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ gap: { sm: '50px', md: '100px', lg: '100px' }, mt: '3%' }}>
+                    {services.map((item, index) => <Grid key={index} item xs='3' sm='3' md='4' lg='3' xl='3' sx={{ display: 'flex', bgcolor: '#FFFFFF', flexDirection: 'column', justifyContent: 'center', flexWrap: 'wrap' }}  >
+                        <Typography variant='h4' m={2}  >
+                            {item.title}
+                        </Typography>
+                        <Box width='20%' border='3px solid #FED5C3' bgcolor='#FED5C3' ml={2} />
+                        <Typography variant='body2' color='gray' m={2} width='90%'>
                             {item.desc}
                         </Typography>
-                        </Box>
-                    </Box>
                     </Grid>
-                )}
-            </Grid>
+                    )}
+                </Grid>
             </Container>
         </Box>
     )
