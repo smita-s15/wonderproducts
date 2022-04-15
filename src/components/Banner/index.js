@@ -41,7 +41,7 @@ const Page1 = () => {
     <>
       <Box sx={{ position: 'relative', height: '100vh' }} bgcolor='#B4C9CE'>
         <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
-          <Box sx={{ width: '70%', display: 'flex', justifyContent: 'center', flexDirection: 'column', mt: '10%' }}>
+          <Box sx={{ width: '70%', display: 'flex', justifyContent: 'center', flexDirection: 'column', mt: '8%' }}>
             <Typography variant="h1" color="initial">
               India’s leading contract
               <br />
