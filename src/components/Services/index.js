@@ -5,17 +5,23 @@ import React from 'react'
 export const Services = () => {
     return (
         <Box position='relative' bgcolor='#F8FAFB' display='flex' alignContent='center' justifyContent="center" marginTop={10}>
-            <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start',  flexDirection:'column' }}>
+            <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column' }}>
                 <Typography variant='h3'>Our Services</Typography>
-                <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ gap: { sm: '50px', md: '100px', lg: '100px' }, mt: '3%' }}>
-                    {services.map((item, index) => <Grid key={index} item xs='3' sm='3' md='4' lg='3' xl='3' sx={{ display: 'flex', bgcolor: '#FFFFFF', flexDirection: 'column', justifyContent: 'center', flexWrap: 'wrap' }}  >
-                        <Typography variant='h4' m={2}  >
-                            {item.title}
-                        </Typography>
-                        <Box width='20%' border='3px solid #FED5C3' bgcolor='#FED5C3' ml={2} />
-                        <Typography variant='body2' color='gray' m={2} width='90%'>
-                            {item.desc}
-                        </Typography>
+                <Grid container mt='3%' >
+                    {services.map((item, index) => <Grid key={index} item lg='4' >
+                        <Box sx={{ display: 'flex', bgcolor: '#FFFFFF', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', flexWrap: 'wrap', width: '380px', height: '300px', padding:'40px',  margin:'30px', }} flexWrap='wrap' gap='10px'  >
+                            <Box>
+                                <Typography variant='h4'  >
+                                    {item.title}
+                                </Typography>
+                            </Box>
+                            <Box width='20%' border='3px solid #FED5C3' bgcolor='#FED5C3' />
+                            <Box>
+                                <Typography variant='body2'>
+                                    {item.desc}
+                                </Typography>
+                            </Box>
+                        </Box>
                     </Grid>
                     )}
                 </Grid>
