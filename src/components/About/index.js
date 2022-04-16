@@ -7,7 +7,7 @@ export const About = () => {
     <Box position='relative' bgcolor='#FED5C3' display='flex' alignContent='center' justifyContent="center" marginTop={10}>
       <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
         <Grid container xs='10' sm='12' md='12' lg='12' xl='12'  >
-          <Grid item xs='10' sm='12' md='7' lg='5' xl='6'  >
+          <Grid item xs='10' sm='12' md='6' lg='5' xl='6'  >
             <Typography variant="h3"  ><b>
 
               About wonder <br /> products
@@ -22,7 +22,7 @@ export const About = () => {
               About
             </Button>
           </Grid>
-          <Grid item xs='10' sm='12' md='7' lg='7' xl='6'  >
+          <Grid item xs='10' sm='12' md='6' lg='7' xl='6'  >
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
               <img src={require("../../ui/assets/About/set-skincare-bottles-containers 2 (1).png")} alt="" style={{ width: '100%' }} />
             </Box>

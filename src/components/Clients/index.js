@@ -6,12 +6,13 @@ import Slider from "react-slick";
 
 export const Clients = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 500,
         autoplay: true,
         autoplaySpeed: 2000,
+        speed: 500,
         slidesToShow: 4,
+        arrows: false,
         slidesToScroll: 1,
         responsive: [
             {
@@ -40,59 +41,45 @@ export const Clients = () => {
             }
         ]
     };
+    const data = [
+        {
+            img: <img src={require("../../ui/assets/Clients/image 74.png")} alt="" />
+        },
+        {
+            img: <img src={require("../../ui/assets/Clients/image 75.png")} alt="" />
+        },
+        {
+            img: <img src={require("../../ui/assets/Clients/Group 1000001768.png")} alt="" />
+        },
+        {
+            img: <img src={require("../../ui/assets/Clients/PngItem_1057053 1.png")} alt="" />
+        },
+        {
+            img: <img src={require("../../ui/assets/Clients/image 78.png")} alt="" />
+        },
+        {
+            img: <img src={require("../../ui/assets/Clients/image 79.png")} alt="" />
+        },
+    ]
+
     return (
-        <>
-            <Container fixed sx={{ margin: '100px auto',overflow:"hidden" }}>
-                <Typography variant="h3" color="initial">
-                    Clients
-                </Typography>
-                <br />
-                <Slider {...settings}>
-                    <Box sx={{
+        <Container fixed sx={{ margin: '100px auto', }}>
+            <Typography variant="h3" color="initial">
+                Clients
+            </Typography>
+            <br />
+            <Slider {...settings}>
+                {data.map((item, index) =>
+                    <Box key={index} sx={{
                         transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
+                            transform: 'scale(1.3)',
                         }
                     }}>
-                        <img src={require("../../ui/assets/Clients/image 74.png")} alt="" />
+                        {item.img}
                     </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Clients/image 75.png")} alt="" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Clients/Group 1000001768.png")} alt="" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Clients/PngItem_1057053 1.png")} alt="" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Clients/image 78.png")} alt="" />
-                    </Box>
-                    <Box sx={{
-                        transition: '1s linear', "&:hover": {
-                            transform: 'scale(1.5)',
-                        }
-                    }}>
-                        <img src={require("../../ui/assets/Clients/image 79.png")} alt="" />
-                    </Box>
-                </Slider>
-            </Container>
-        </>
+                )}
+            </Slider>
+        </Container>
     )
 }
 

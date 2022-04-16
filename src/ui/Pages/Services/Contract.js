@@ -8,12 +8,9 @@ import CircleIcon from '@mui/icons-material/Circle';
 export const Contract = () => {
     return (
         <>
-            <Box className="half-banner" bgcolor='red' width='100%' sx={{display:'flex', justifyContent:'flex-start', alignItems:'center'}} >
-                <Container fixed  sx={{display:'flex', justifyContent:'flex-start', alignItems:'center' , bgcolor:'red'}} >
-                    <img src={require("../../assets/Services/Services (1).png")} alt="" style={{ position: 'absolute', width:'80%', bottom: '10px', }} />
-                        <Typography variant='h2' position='absolute' sx={{marginBottom:'-10%'}} >
-                            Contract Manufacturing
-                        </Typography>
+            <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+                <Container fixed>
+                    <img src={require("../../assets/Services/contractmnf.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
             </Box>
             <Container fixed sx={{ margin: '100px auto', }}>

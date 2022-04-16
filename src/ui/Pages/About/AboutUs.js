@@ -7,14 +7,9 @@ import { useStyles } from './Styles'
 export const AboutUs = () => {
     return (
         <>
-            <Box className="half-banner" bgcolor='red' width='100%' sx={{display:'flex', justifyContent:'flex-start', alignItems:'center'}} >
-                <Container fixed  sx={{display:'flex', justifyContent:'flex-start', alignItems:'center' , bgcolor:'red'}} >
-                    <img src={require("../../assets/About/about us.png")} alt="" style={{ position: 'absolute', width:'80%', bottom: '10px', }} />
-                    
-                        <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }} >
-                           About Us
-                        </Typography>
-                    
+            <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+                <Container fixed>
+                    <img src={require("../../assets/About/about.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
             </Box>
             <Container fixed sx={{ margin: '100px auto', }}>
@@ -39,10 +34,10 @@ export const AboutUs = () => {
                         </Typography>
                     </Grid>
                     <Grid item xl="6" md="6" lg='6' xs="12" >
-                        <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-100px', width:'50%' }} />
+                        <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-100px', width: '50%' }} />
                     </Grid>
                 </Grid>
-                </Container>
+            </Container>
 
             <Box sx={{ margin: '200px' }} >
             </Box>
@@ -134,7 +129,7 @@ const BoardOfDirector = () => {
                     Board of Directors
                 </Typography>
                 <br /><br />
-                <Box display="flex" gap="100px" flexWrap="wrap" width='100%' sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+                <Box display="flex" gap="100px" flexWrap="wrap" width='100%' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     {Arr.map((item, index) => (
                         <Box key={index} sx={{ width: '288px', position: 'relative' }}>
                             {item.image}
@@ -147,7 +142,7 @@ const BoardOfDirector = () => {
                                 </Typography>
                                 <br />
                                 <Typography variant="body2" fontWeight="400" color="#fff">
-                                   {item.desc}
+                                    {item.desc}
                                 </Typography>
                             </Box>
                         </Box>
@@ -160,21 +155,21 @@ const BoardOfDirector = () => {
 
 const Arr = [
     {
-        title:' Nirav Parmar',
+        title: ' Nirav Parmar',
         subtitle: 'UI/UX Designer',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eu mauris, sed eget cursus nisi. Eros, a elementum auctor neque, risus.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eu mauris, sed eget cursus nisi. Eros, a elementum auctor neque, risus.',
         image: <img src={require("../../assets/About/Rectangle 4376.png")} alt="" />
     },
     {
-        title:' Nirav Parmar',
+        title: ' Nirav Parmar',
         subtitle: 'UI/UX Designer',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eu mauris, sed eget cursus nisi. Eros, a elementum auctor neque, risus.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eu mauris, sed eget cursus nisi. Eros, a elementum auctor neque, risus.',
         image: <img src={require("../../assets/About/Rectangle 4376 (1).png")} alt="" />
     },
     {
-        title:' Nirav Parmar',
+        title: ' Nirav Parmar',
         subtitle: 'UI/UX Designer',
-        desc:' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eu mauris, sed eget cursus nisi. Eros, a elementum auctor neque, risus.',
+        desc: ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eu mauris, sed eget cursus nisi. Eros, a elementum auctor neque, risus.',
         image: <img src={require("../../assets/About/Rectangle 4376 (1).png")} alt="" />
     },
 ]

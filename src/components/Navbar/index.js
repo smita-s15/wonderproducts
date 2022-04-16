@@ -13,13 +13,13 @@ export const Navbar = () => {
 
   return (
     <AppBar position="static" sx={{ boxShadow: 'none', background: '#ffffff', padding: '10px', marginX: 'auto',}} >
-      <Toolbar variant="dense"  >
+      <Toolbar variant="dense"   >
         <Box flexGrow='1'>
           <NavLink to="/">
             <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
           </NavLink>
         </Box>
-        <Box flexDirection='row' sx={{ mr: 2, display: { xs: 'none', md:'none', lg: 'block' , xl:'block'}, justifyContent:'center', alignItems:'center' }}
+        <Box flexDirection='row' sx={{ mr: 2, justifyContent:'center', alignItems:'center' , display: { xs: 'none',lg:'block'}   }}
         >
           <Toolbar >
             <NavLink

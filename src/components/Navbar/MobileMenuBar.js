@@ -16,8 +16,8 @@ export const MobileMenuBar = () => {
 
 
   return (
-    <div>
-      <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2, display: { xs: 'block', md:'block', lg: 'none', xl:'none' } }} onClick={toggleDrawer(true)}
+    <>
+      <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2, display: { xs: 'block', lg: 'none',} }} onClick={toggleDrawer(true)}
       >
         <MenuIcon sx={{ color: 'black' }} />
       </IconButton>
@@ -72,7 +72,7 @@ export const MobileMenuBar = () => {
         </Box>
 
       </SwipeableDrawer>
-    </div>
+      </>
   );
 }
 

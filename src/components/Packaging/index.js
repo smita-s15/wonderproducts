@@ -9,12 +9,13 @@ import { useStyles } from './Style';
 const Packaging = () => {
     const classes = useStyles();
     var settings = {
-        dots: true,
+        dots: false,
+        arrows:false,
         infinite: true,
-        speed: 500,
-        slidesToShow: 3,
         autoplay: true,
         autoplaySpeed: 2000,
+        speed: 500,
+        slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
             {
@@ -37,7 +38,7 @@ const Packaging = () => {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }
@@ -65,17 +66,18 @@ const Packaging = () => {
     ]
     return (
         <>
-            <Container fixed sx={{ margin: '100px auto', }}>
+            <Container sx={{ margin: { md: '100px auto', xs: '50px auto' }, }}>
                 <Typography variant="h3" color="initial">
                     Packaging
                 </Typography>
                 <br />
                 <Slider {...settings}>
                     {Data.map((item, index) =>
-
-                        <Box key={index} >
-                            {item.img}
-                        </Box>
+                        <>
+                            <Box key={index} >
+                                {item.img}
+                            </Box>
+                        </>
                     )}
                 </Slider>
             </Container>

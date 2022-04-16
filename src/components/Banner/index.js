@@ -40,8 +40,8 @@ const Page1 = () => {
   return (
     <>
       <Box sx={{ position: 'relative', height: '100vh' }} className='banner'>
-        <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
-          <Box sx={{ width: '70%', display: 'flex', justifyContent: 'center', flexDirection: 'column', mt: {md:'9%' ,lg:'15%'} }}>
+        <Container fixed sx={{ padding: '100px 40px', display: 'flex', justifyContent: 'flex-start', }}>
+          <Box sx={{ width:{xs:'100%', md:'100% ', lg:'70%'}, display: 'flex', justifyContent: 'center', flexDirection: 'column', mt: {md:'9%' ,lg:'15%'} }}>
             <Typography variant="h1" color="initial">
               <b>
                 India’s leading contract
@@ -61,10 +61,10 @@ const Page1 = () => {
             </Box>
           </Box>
         </Container>
-        <Box sx={{ width: { xs: '100%', sm: '100%', lg: '70%', }, position: 'absolute', right: '0', top: { xs: '40%', sm: '200px', lg: '-50px' }, zIndex: '10' }}>
-          <img src={require("../../ui/assets/Banner/06 3.png")} alt="" style={{ width: '100%' }} />
+        <Box sx={{  position: 'absolute', right: '0', top: { xs: '500px', sm:'300px', md: '100px', lg: '30px' }, zIndex: '10' }}>
+          <img src={require("../../ui/assets/Banner/06 3.png")} alt="" style={{ width:'100%' }} />
         </Box>
-        <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' }}>
+        <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' , display:{xs:'none', sm:'block'} }}>
           <img src={require("../../ui/assets/Banner/wonder.png")} alt="" />
         </Box>
         <Box sx={{ position: 'absolute', left: '10px', bottom: '10px', }}>
@@ -80,9 +80,9 @@ const Page1 = () => {
 const Page2 = () => {
   return (
     <Box sx={{ position: 'relative', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }} className='banner' >
-      <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
-        <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }} >
-          <Grid item xs='12' sm='12' md='6' lg='5' xl='6'  >
+      <Container fixed sx={{ padding:{xs:'50px', md:'100px 0', lg:'100px 0'}, display: 'flex', justifyContent: 'flex-start', }}>
+        <Grid container  sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }} >
+          <Grid item xs='8' sm='12' md='6' lg='5' xl='6'  >
             <Typography variant="h1" >
               Reasearch and
               <br />
@@ -101,8 +101,8 @@ const Page2 = () => {
           </Grid>
         </Grid>
       </Container>
-      <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' }}>
-        <img src={require("../../ui/assets/Banner/wonder.png")} alt="" style={{ height: '100vh' }} />
+      <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0', display:{xs:'none', sm:'block'} }}>
+        <img src={require("../../ui/assets/Banner/wonder.png")} alt="" style={{ height: '100vh' }}  />
       </Box>
       <Box sx={{ position: 'absolute', left: '20px', bottom: '10px', }}>
         <img src={require("../../ui/assets/Banner/Wonder Products.png")} alt="" />
@@ -110,7 +110,7 @@ const Page2 = () => {
       <Box sx={{ position: 'absolute', left: '50%', top: '0.1%' }}  >
         <img src={require("../../ui/assets/Banner/Vector.png")} alt="" />
       </Box>
-      <Box sx={{ position: 'absolute', left: '5%', bottom: '0.1%' }}  >
+      <Box sx={{ position: 'absolute', left: '5%', bottom: '0.1%', display:{xs:'none', sm:'block'}  }}  >
         <img src={require("../../ui/assets/Banner/Flower.png")} alt="" />
       </Box>
     </Box>
@@ -120,7 +120,7 @@ const Page2 = () => {
 const Page3 = () => {
   return (
     <Box sx={{ position: 'relative', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', }} className='banner' >
-      <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', }}>
+      <Container fixed sx={{ padding: {xs:'50px', md:'100px o'}, display: 'flex', justifyContent: 'flex-start', }}>
         <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }} >
           <Grid item xs='12' sm='12' md='6' lg='5' xl='6'  >
             <Typography variant="h1" >
@@ -139,16 +139,16 @@ const Page3 = () => {
           </Grid>
         </Grid>
       </Container>
-      <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0' }} >
-        <img src={require("../../ui/assets/Banner/wonder.png")} alt="" style={{ height: '100vh' }} />
+      <Box sx={{ position: 'absolute', right: '0', top: '0', zIndex: '0', display:{xs:'none', sm:'block'} }} >
+        <img src={require("../../ui/assets/Banner/wonder.png")} alt="" style={{ height: '100vh' }}  />
       </Box>
-      <Box sx={{ position: 'absolute', left: '20px', bottom: '10px', }}>
+      <Box sx={{ position: 'absolute', left: '20px', bottom: '10px',  }}>
         <img src={require("../../ui/assets/Banner/Wonder Products.png")} alt="" />
       </Box>
       <Box sx={{ position: 'absolute', left: '50%', top: '0.1%' }}  >
         <img src={require("../../ui/assets/Banner/Vector.png")} alt="" />
       </Box>
-      <Box sx={{ position: 'absolute', left: '5%', bottom: '0.1%' }}  >
+      <Box sx={{ position: 'absolute', left: '5%', bottom: '0.1%', display:{xs:'none', sm:'block'}   }}  >
         <img src={require("../../ui/assets/Banner/Flower.png")} alt="" />
       </Box>
     </Box>
@@ -160,10 +160,9 @@ const Page4 = () => {
 
     <>
 
-      <Box sx={{ position: 'relative', height: '100vh' }} className='banner'>
+      <Box sx={{ position: 'relative', height:'100vh' }} className='banner'>
         <Grid
           container
-          xl="12" lg='12' md="12" xs="12"
           spacing={0}
           direction="row"
           justifyContent="center"
@@ -171,12 +170,12 @@ const Page4 = () => {
           alignContent="center"
           wrap="wrap"
         >
-          <Grid item xl="3" lg='3' md="3" xs="12" sx={{ padding: '100px 0 0 50px' }}>
-            <Typography variant="h1" color="initial">
+          <Grid item xl="3" lg='3' xs="12"  sx={{ padding: '100px 0 0 50px', }}>
+            <Typography variant="h1" color="initial" >
               <b>Services</b>
             </Typography>
             <br />
-            <Typography variant="h6" color="initial">
+            <Typography variant="h6" color="initial" >
               Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit. Nunc id  preti.
             </Typography>
             <br /><br /><br />
@@ -184,27 +183,27 @@ const Page4 = () => {
               Explore!
             </Button>
           </Grid>
-          <Grid item xl="3" lg='3' md="3" xs="3" >
-            <Box sx={{ background: '#FED5C3', height: '100vh', gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <Grid item xl="3" lg='3' xs="4"  >
+            <Box sx={{ background: {sm:'transparent',lg:'#FED5C3'}, height: {md:'50vh',lg:'100vh'}, gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <img src={require("../../ui/assets/Banner/Rectangle 4355.png")} alt="" style={{ width: '50%', height: '60%' }} />
-              <Typography variant="h6" color="initial" fontFamily="cinzel">
-                <b>CONTRACT Manufacture</b>
+              <Typography variant="h6" color="initial" fontFamily="cinzel" textAlign='center'>
+                <b>Contract Manufacture</b>
               </Typography>
             </Box>
           </Grid>
-          <Grid item xl="3" lg='3' md="3" xs="3">
-            <Box sx={{ height: '100vh', gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end' }}>
+          <Grid item xl="3" lg='3'  xs="4">
+            <Box sx={{ height: {md:'50vh',lg:'100vh'}, gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end' }}>
               <img src={require("../../ui/assets/Banner/image 60.png")} alt="" style={{ width: '50%', height: '60%', top: '10' }} />
-              <Typography variant="h6" color="initial" sx={{ marginBottom: '20px' }} fontFamily="cinzel">
-                <b>PRIVATE LABEL Manufacture</b>
+              <Typography variant="h6" color="initial" textAlign='center' sx={{ marginBottom: '20px' }} fontFamily="cinzel">
+                <b>Private Label Manufacture</b>
               </Typography>
             </Box>
           </Grid>
-          <Grid item xl="3" lg='3' md="3" xs="3">
-            <Box sx={{ background: '#FED5C3', height: '100vh', gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <Grid item xl="3" lg='3'  xs="4">
+            <Box sx={{ background:{sm:'transparent',lg:'#FED5C3'}, height: {md:'50vh',lg:'100vh'}, gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <img src={require("../../ui/assets/Banner/Rectangle 4317.png")} alt="" style={{ width: '40%', height: '60%' }} />
-              <Typography variant="h6" color="initial" fontFamily="cinzel">
-                <b>TURN KEY PROJECTS</b>
+              <Typography variant="h6" color="initial" fontFamily="cinzel" textAlign='center'>
+                <b>Turn Key Projects</b>
               </Typography>
             </Box>
           </Grid>

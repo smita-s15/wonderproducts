@@ -8,17 +8,15 @@ import React from 'react'
 export const Globals = () => {
     return (
         <>
-            <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
-                <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', }} >
-                    <img src={require("../../ui/assets/Globals/Global Network.png")} alt="" style={{ position: 'absolute', width: '100%', height:'170px', bottom: '10px', }} />
-                    <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }}>
-                        Global Networks
-                    </Typography>
+            <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+                <Container fixed>
+                    <img src={require("../../ui/assets/Globals/globalnetwork.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
             </Box>
+
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', overflow: 'hidden' }}  >
                 <Box bgcolor='#FED5C3' width='100%' mt={20} height='400px' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', }}>
-                    <Container fixed sx={{ marginTop:'10px',  display: 'flex', flexDirection: 'column', gap: '20px',}}>
+                    <Container fixed sx={{ marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '20px', }}>
                         <Typography variant='h3'  >
                             Global Network
                         </Typography>

@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
         <Box  bgcolor='#000000' alignContent='center' padding='70px 0' >
              <Container fixed  sx={{  display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection: 'row', }}>
-            <Grid container xs='12' sm='12' md='10' lg='12' sx={{  display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' ,  alignContent:'center',}} >
+            <Grid container xs='12' sm='12' md='10' lg='12' sx={{  display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' ,  alignContent:'center',gap:'30px' }} >
                 <Grid item xs='12' sm='12' md='4' lg='4' sx={{display:'flex', justifyContent:'flex-start', flexDirection:'column'}} >
                         <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" width={200}  />
                         <Typography sx={{ color: 'white', mt: '30px' }}>

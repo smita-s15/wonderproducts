@@ -5,11 +5,11 @@ import React from 'react'
 export const Services = () => {
     return (
         <Box position='relative' bgcolor='#F8FAFB' display='flex' alignContent='center' justifyContent="center" marginTop={10}>
-            <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column' }}>
+            <Container fixed sx={{ padding: '100px 20px', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column' }}>
                 <Typography variant='h3'>Our Services</Typography>
                 <Grid container mt='3%' >
-                    {services.map((item, index) => <Grid key={index} item lg='4' >
-                        <Box sx={{ display: 'flex', bgcolor: '#FFFFFF', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', flexWrap: 'wrap', width: '380px', height: '300px', padding:'40px',  margin:'30px', }} flexWrap='wrap' gap='10px'  >
+                    {services.map((item, index) => <Grid key={index} item md="4" lg='4' >
+                        <Box sx={{ display: 'flex', bgcolor: '#FFFFFF', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', padding:'40px',  margin:'10px', }} gap='10px'  >
                             <Box>
                                 <Typography variant='h4'  >
                                     {item.title}

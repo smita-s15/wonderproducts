@@ -8,20 +8,21 @@ import { Enquiry } from '../Enquiry'
 import { Clients } from '../Clients'
 import WhyUs from '../WhyUs'
 import Packaging from '../Packaging'
+import { Box } from '@mui/material'
 
 
 export const Index = () => {
   return (
-    <div>
+    < >
         <Banner />
         <Categories />
         <About />
         <Services />
-        <WhyUs />
+        {/* <WhyUs /> */}
         <Packaging />
         <Clients />
         <FAQ />
         <Enquiry />
-    </div>
+    </>
   )
 }

@@ -6,14 +6,12 @@ import { Clients } from '../../components/Clients'
 export const Contact = () => {
   return (
     <>
-      <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
-        <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', }} >
-          <img src={require("../../ui/assets/Contact/contact us.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-          <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }}>
-            Contact Us
-          </Typography>
+      <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+        <Container fixed>
+          <img src={require("../../ui/assets/Contact/contact.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
         </Container>
       </Box>
+
       <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
         <Box marginTop={20} >
           <Box position='absolute' bgcolor='#FED5C3' borderRadius={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '50%', height: '45rem' }} marginLeft={10} marginTop={-7} >

@@ -11,9 +11,6 @@ export const Location = () => {
             <Box className="half-banner"  sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
                 <Container fixed sx={{width:'100%', display: 'flex', justifyContent: 'flex-start', alignItems: 'center', margin:'200px', }} >
                     <img src={require("../../ui/assets/Location/locations.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h2' position='absolute' sx={{ marginBottom: {sm:'-40%', lg: '-10%'} }}>
-                        Location
-                    </Typography>
                 </Container>
             </Box>
             <Container fixed sx={{ margin: { md: '100px auto', xs: '50px auto' } }}>

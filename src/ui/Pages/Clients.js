@@ -5,12 +5,9 @@ import React from 'react'
 export const Client = () => {
     return (
         <>
-            <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
-                <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', }} >
+         <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+                <Container fixed>
                     <img src={require("../../ui/assets/Clients/clients.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }}>
-                        Clients
-                    </Typography>
                 </Container>
             </Box>
             <Box flexDirection='column' bgcolor='#FBFBFB' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >

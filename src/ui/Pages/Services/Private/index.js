@@ -12,12 +12,9 @@ export const Private = ({ children, props }) => {
 
     return (
         <>
-            <Box className="half-banner" bgcolor='red' width='100%' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }} >
-                <Container fixed sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', bgcolor: 'red' }} >
-                    <img src={require("../../../../ui/assets/Services/Services (1).png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
-                    <Typography variant='h2' position='absolute' sx={{ marginBottom: '-10%' }} >
-                        Private Label
-                    </Typography>
+         <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+                <Container fixed>
+                    <img src={require("../../../../ui/assets/Services/privatelabel.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
             </Box>
             <Container fixed>
