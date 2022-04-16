@@ -16,16 +16,18 @@ export const Packaging = () => {
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
 
                 <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >
-                    <Grid container xl={12} lg={12} md={12} sm='12' >
+                    <Grid container  >
                         {details.map((item, index) => {
-                            return <Grid key={index} xl={3} lg={3} md={4} sm='6' item bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '25%', height: '150px', borderRadius: '10px', margin: '50px' }}>
-                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '40%', }}>
-                                    {item.image}
-                                </Box>
-                                <Box sx={{ display: 'flex', justifyContent: 'left', alignItems: 'flex-start', flexWrap: 'wrap', width: '60%', marginX: '5' }}>
-                                    <Typography variant='h6' >
-                                        {item.title}
-                                    </Typography>
+                            return <Grid key={index} xl={3} lg='4' md={4} sm='6' item >
+                                <Box bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px', width: '380px', borderRadius: '10px', margin:'10px',  }}> 
+                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '50%', }}>
+                                        {item.image}
+                                    </Box>
+                                    <Box sx={{ display: 'flex', justifyContent: 'left', alignItems: 'flex-start', flexWrap: 'wrap', width: '50%', marginX: '5' }}>
+                                        <Typography variant='h6' >
+                                            {item.title}
+                                        </Typography>
+                                    </Box>
                                 </Box>
                             </Grid>
                         }
