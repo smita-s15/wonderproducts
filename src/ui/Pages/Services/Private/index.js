@@ -5,6 +5,7 @@ import { Clients } from '../../../../components/Clients'
 import CircleIcon from '@mui/icons-material/Circle';
 import Slider from "react-slick";
 import { useStyles } from './style';
+import Carousel from './Carousel';
 
 
 
@@ -12,12 +13,12 @@ export const Private = ({ children, props }) => {
 
     return (
         <>
-         <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+            <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
                 <Container fixed>
                     <img src={require("../../../../ui/assets/Services/privatelabel.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
             </Box>
-            <Container fixed>
+            <Container fixed sx={{ margin: { md: '-150px auto 50px auto', xs: '50px auto' } }}>
                 <Grid
                     container
                     spacing={3}
@@ -28,7 +29,7 @@ export const Private = ({ children, props }) => {
                     wrap="wrap"
                     sx={{ position: "relative" }}
                 >
-                    <Grid item xl="6" md="6" xs="12" sx={{ marginTop: '100px' }}>
+                    <Grid item xl="6" md="6" xs="12" sx={{ marginTop: '100px', marginTop:{md:'150px',xs:'auto'} }}>
                         <Typography gutterBottom variant="h1">
                             Our Services
                         </Typography>
@@ -48,31 +49,22 @@ export const Private = ({ children, props }) => {
                         )}
                     </Grid>
                     <Grid item xl="6" md="6" xs="12"  >
-                        <img src={require("../../../../ui/assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-60px' }} />
+                        <img src={require("../../../../ui/assets/Services/privatelabel (1).cf1e5b65217c34e34122.png")} alt="" style={{ width:'100%' , mt:'-60px'}} />
                     </Grid>
                 </Grid>
+            <Container {...props}>
+                {Arr.map((item, index) => {
+                    return <Box key={index} >
+                        <FirstComponent  >
+                            {item.DataComponentOne}
+                        </FirstComponent>
+                        <SecondComponent  >
+                            {item.DataComponentTwo}
+                        </SecondComponent>
+                    </Box>
+                })}
             </Container>
-
-            <Box sx={{ margin: '200px' }} >
-            </Box>
-            <Container fixed sx={{ margin: '100px auto' }} {...props}>
-                    {Arr.map((item, index) => {
-                        return <Grid container sm='12' key={index} >
-                            <Grid item sm='12'>
-                                <FirstComponent >
-                                    {item.DataComponentOne}
-                                </FirstComponent>
-
-                            </Grid>
-
-                            <Grid item sm='12' >
-                                <SecondComponent  >
-                                    {item.DataComponentTwo}
-                                </SecondComponent>
-                            </Grid>
-                        </Grid>
-                    })}
-            </Container>
+                </Container>
             <Clients />
         </>
     )
@@ -117,29 +109,9 @@ const DataComponent = (props) => {
         slidesToScroll: 1,
     };
 
-    // const Data = [
-    //     {
-    //         img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
-    //     },
-    //     {
-    //         img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
-    //     },
-    //     {
-    //         img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
-    //     },
-    //     {
-    //         img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
-    //     },
-    //     {
-    //         img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
-    //     },
-    //     {
-    //         img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
-    //     },
-    // ]
     return (
         <>
-            <Grid item sm='12' md='12' lg='6'>
+            <Grid item lg="7" md="6" xs="12"  >
                 <Typography variant="h2" color="initial" opacity='0.6'>
                     {title}
                 </Typography>
@@ -155,15 +127,8 @@ const DataComponent = (props) => {
                     {text2}
                 </Typography>
             </Grid>
-            <Grid item sm='12' md='12' lg='6' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} padding='10px auto' borderRadius={5}>
-                {/* <Slider {...settings}>
-                    {Data.map((item, index) =>
-
-                        <Box key={index} >
-                            {item.img}
-                        </Box>
-                    )}
-                </Slider> */}
+            <Grid item lg="5" md="6" xs="12" sx={{ padding: '20px' }} >
+                <Carousel />
             </Grid>
 
         </>
@@ -175,17 +140,17 @@ const DataComponent = (props) => {
 
 const FirstComponent = ({ children }) => {
     return (
-        <Box sx={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', display: 'flex', }} margin={10}>
+        <Grid container sx={{ flexDirection: 'row', mt:'100px' }} >
             {children}
-        </Box>
+        </Grid>
     )
 }
 
 const SecondComponent = ({ children }) => {
     return (
-        <Box sx={{ flexDirection: 'row-reverse', justifyContent: 'center', alignItems: 'center', display: 'flex', mt: '100px' }} margin={10}>
+        <Grid container sx={{ flexDirection: 'row-reverse', mt:'100px' }}  >
             {children}
-        </Box>
+        </Grid>
     )
 }
 const Arr = [

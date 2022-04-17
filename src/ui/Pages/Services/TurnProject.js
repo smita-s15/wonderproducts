@@ -13,10 +13,9 @@ export const TurnProject = () => {
                     <img src={require("../../assets/Services/turnkeyproj.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
             </Box>
-            <Container fixed sx={{ margin: '100px auto', }}>
+            <Container fixed sx={{ margin: { md: '-200px auto 50px auto', xs: '50px auto' } }}>
                 <Grid
                     container
-                    xl="12" md="12" lg='12' xs="12"
                     spacing={5}
                     direction="row"
                     justifyContent="center"
@@ -25,7 +24,7 @@ export const TurnProject = () => {
                     wrap="wrap"
                     sx={{ position: "relative" }}
                 >
-                    <Grid item xl="6" md="6" lg='6' xs="12" >
+                    <Grid item xl="6" md="6" lg='6' xs="12"  sx={{ marginTop: '100px', marginTop:{md:'200px',xs:'auto'} }} >
                         <Typography gutterBottom variant="h3">
                             Reasearch & Development
                         </Typography>
@@ -43,7 +42,7 @@ export const TurnProject = () => {
                         </Typography>
                     </Grid>
                     <Grid item xl="6" md="6" lg='6' xs="12" >
-                        <img src={require("../../assets/Services/privatelabel (1).cf1e5b65217c34e34122.png")} alt="" style={{ position: 'absolute', top: '-90px' }} />
+                        <img src={require("../../assets/Services/turnkeyproj1.png")} alt="" style={{width:'100%' }} />
                     </Grid>
                 </Grid>
             </Container>
@@ -78,7 +77,7 @@ export const TurnProject = () => {
                     </Grid>
                 </Container>
             </Box>
-            <Container fixed sx={{ margin: '100px auto', }}>
+            <Container fixed >
                 <Grid
                     container
                     xl="12" md="12" lg='12' xs="12"
@@ -99,9 +98,7 @@ export const TurnProject = () => {
                         </Typography>
                     </Grid>
                     <Grid item xl="6" md="6" lg='6' xs="12" >
-                        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-                            <img src={require("../../assets/Services/Group 1000001682.png")} alt="" />
-                        </Box>
+                            <img src={require("../../assets/Services/Group 1000001682.png")} alt="" style={{width:'100%'}} /> 
                     </Grid>
                 </Grid>
             </Container>

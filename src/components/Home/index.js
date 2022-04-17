@@ -18,7 +18,7 @@ export const Index = () => {
         <Categories />
         <About />
         <Services />
-        {/* <WhyUs /> */}
+        <WhyUs />
         <Packaging />
         <Clients />
         <FAQ />

@@ -12,10 +12,9 @@ export const AboutUs = () => {
                     <img src={require("../../assets/About/about.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
             </Box>
-            <Container fixed sx={{ margin: '100px auto', }}>
+            <Container fixed sx={{ margin: { md: '-150px auto 50px auto', xs: '50px auto' } }}>
                 <Grid
                     container
-                    xl="12" md="12" lg='12' xs="12"
                     spacing={5}
                     direction="row"
                     justifyContent="center"
@@ -24,7 +23,7 @@ export const AboutUs = () => {
                     wrap="wrap"
                     sx={{ position: "relative" }}
                 >
-                    <Grid item xl="6" md="6" lg='6' xs="12" >
+                    <Grid item xl="6" md="6" lg='6' xs="12" sx={{ marginTop: '100px', marginTop:{md:'150px',xs:'auto'} }}  >
                         <Typography gutterBottom variant="h3">
                             Our Services
                         </Typography>
@@ -34,7 +33,7 @@ export const AboutUs = () => {
                         </Typography>
                     </Grid>
                     <Grid item xl="6" md="6" lg='6' xs="12" >
-                        <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{ position: 'absolute', top: '-100px', width: '50%' }} />
+                        <img src={require("../../assets/Services/unsplash_OPjxGV7ubsY (1).png")} alt="" style={{width: '100%' }} />
                     </Grid>
                 </Grid>
             </Container>

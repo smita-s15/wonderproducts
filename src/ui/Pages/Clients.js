@@ -11,12 +11,12 @@ export const Client = () => {
                 </Container>
             </Box>
             <Box flexDirection='column' bgcolor='#FBFBFB' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
-                <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >\
+                <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >
                     <Grid container  >
                         {details.map((item, index) =>
-                            <Grid key={index} lg='4'  >
-                                <Box flexDirection='column' item bgcolor='#FFFFFF' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',  borderRadius: '10px', width:'390px' }} borderBottom='4px solid #F8F8F8' margin={2}>
-                                    <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor: '#B4C9CE29', alignItems: 'center', width:'90%', height:'200px', margin: '20px 100px', borderRadius: '10px' }}>
+                            <Grid key={index} lg='4' md='6'  >
+                                <Box flexDirection='column' item bgcolor='#FFFFFF' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',  borderRadius: '10px', width:'370px' }} borderBottom='4px solid #F8F8F8' margin={2}>
+                                    <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor: '#B4C9CE29', alignItems: 'center', width:'90%', height:'200px', margin:'20px',  borderRadius: '10px' }}>
                                         {item.image}
                                     </Box>
                                     <Box sx={{ display: 'flex', justifyContent: 'left', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%', padding: '10px' }}>
