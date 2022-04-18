@@ -4,7 +4,7 @@ import { Index } from "./components/Home";
 import { Contact } from "./ui/Pages/Contact";
 import { Globals } from "./ui/Pages/Globals";
 import { Footer } from "./components/Footer";
-import { Categories } from "./ui/Pages/Categories";
+import { Categories1 } from "./ui/Pages/Categories";
 import { Packaging } from "./ui/Pages/Packaging";
 import { Client} from "./ui/Pages/Clients";
 import { Location } from "./ui/Pages/Location";
@@ -22,7 +22,7 @@ function App() {
         <Route path="/">
           <Route index element={<Index />} />
           <Route path="/AboutUs" element={<AboutUs />} />
-          <Route path="/Categories" element={<Categories />} />
+          <Route path="/Categories" element={<Categories1 />} />
           <Route path="/Packaging" element={<Packaging />} />
           <Route path="/Client" element={<Client />} />
           <Route path="/contact" element={<Contact />} />

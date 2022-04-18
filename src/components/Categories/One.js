@@ -16,7 +16,7 @@ const One = () => {
         {Data.map((item, i) => (
           <div>
             <Box className={classes.card} onMouseOut={() => { setActive(false); setActiveComp("") }}
-              onMouseOver={() => { setActive(true); setActiveComp(i) }} >
+              onMouseOver={() => { setActive(true); setActiveComp(i) }}  >
               <img src={require(`../../ui/assets/Categories/${item.image}`)} alt="" />
               <Typography variant="h5" color="initial">
                 {item.name}
@@ -215,7 +215,7 @@ const Details = [
           <br /><br />
           Itch Cream
         </Grid>
-        <Grid item xl="3" md="3">
+        <Grid item xl="3"  md="3">
           Glycerine Soap
           <br /><br />
           Opaque Soap

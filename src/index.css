@@ -28,3 +28,18 @@ body {
   margin: 100px auto;
   border: 1px solid red;
 }
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+.half-banner{
+  height: 25vh;
+}
+.banner {
+  height: auto;
+}
+}
+
+.container {
+  width: 90%;
+  margin: 100px auto;
+}
+

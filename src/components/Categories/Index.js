@@ -18,7 +18,6 @@ const Categories = () => {
                 <Two />
             </Container>
             <Container fixed sx={{ margin: '100px auto', display:{xs:'block', md:'none'} }}>
-            
                 <MobileCtg />
             </Container>
         </>
