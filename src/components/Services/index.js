@@ -4,8 +4,8 @@ import React from 'react'
 
 export const Services = () => {
     return (
-        <Box position='relative' bgcolor='#F8FAFB' display='flex' alignContent='center' justifyContent="center" marginTop={10}>
-            <Container fixed sx={{ padding: '100px 20px', display: 'flex', justifyContent: 'flex-start', flexDirection: 'column' }}>
+        <Box position='relative' bgcolor='#F8FAFB' display='flex' alignContent='center' justifyContent="center" marginTop={5} >
+            <Container fixed sx={{  padding: { md: '100px auto', xs: '10px auto' }, display: 'flex', justifyContent: 'center', alignItems: 'flex-start', flexDirection:'column'}}>
                 <Typography variant='h3'>Our Services</Typography>
                 <Grid container mt='3%' >
                     {services.map((item, index) => <Grid key={index} item md="4" lg='4' >

@@ -13,11 +13,21 @@ export const Packaging = () => {
 
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '30px' }}  >
 
-                <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >
+                <Container fixed sx={{ padding: { md: '100px auto', xs: '50px auto' }, marginY:'100px ', display:'flex', alignItems:'center'}} >
                     <Grid container  >
                         {details.map((item, index) => {
-                            return <Grid key={index} item  lg='4' md='6'  sm='12' >
-                                <Box bgcolor='#B4C9CE33' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px', width: '380px', borderRadius: '10px', margin: '10px', }}>
+                            return <Grid key={index} item lg='4' md='6' xs='12' >
+                                <Box sx={{
+                                    width: { md: "350px", xs: '100%' },
+                                    height: "135px",
+                                    background: "rgba(180, 201, 206, 0.2)",
+                                    borderRadius: "10px",
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '30px',
+                                    margin:'10px'
+                                }}>
                                     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', width: '50%', }}>
                                         {item.image}
                                     </Box>

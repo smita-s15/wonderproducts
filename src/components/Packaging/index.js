@@ -38,7 +38,7 @@ const Packaging = () => {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             }
@@ -46,16 +46,16 @@ const Packaging = () => {
     };
     const Data = [
         {
-            img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
-        },
-        {
             img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
         },
         {
             img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
         },
         {
-            img: <img src={require("../../ui/assets/Packaging/jar-022.png")} alt="clients" className={classes.image} />
+            img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
+        },
+        {
+            img: <img src={require("../../ui/assets/Packaging/M003T109_Roll_On_Deodorant_010 1.png")} alt="clients" className={classes.image} />
         },
         {
             img: <img src={require("../../ui/assets/Packaging/0-5-oz-cream-tube-mockup-front-view0 1.png")} alt="clients" className={classes.image} />
@@ -66,7 +66,7 @@ const Packaging = () => {
     ]
     return (
         <>
-            <Container sx={{ margin: { md: '100px auto', xs: '50px auto' }, }}>
+             <Container fixed sx={{ margin:  { md: '100px auto', xs: '50px auto' }, }}>
                 <Typography variant="h3" color="initial">
                     Packaging
                 </Typography>

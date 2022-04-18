@@ -1,11 +1,10 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
-import { Clients } from '../../components/Clients'
 import React from 'react'
 
 export const Client = () => {
     return (
         <>
-         <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+            <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
                 <Container fixed>
                     <img src={require("../../ui/assets/Clients/clients.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
@@ -14,9 +13,17 @@ export const Client = () => {
                 <Container fixed sx={{ padding: '100px, auto', marginY: '100px' }} >
                     <Grid container  >
                         {details.map((item, index) =>
-                            <Grid key={index} lg='4' md='6'  >
-                                <Box flexDirection='column' item bgcolor='#FFFFFF' sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center',  borderRadius: '10px', width:'370px' }} borderBottom='4px solid #F8F8F8' margin={2}>
-                                    <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor: '#B4C9CE29', alignItems: 'center', width:'90%', height:'200px', margin:'20px',  borderRadius: '10px' }}>
+                            <Grid key={index} lg='4' md='6' xs='12' sx={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}  >
+                                <Box sx={{
+                                    width: { md: "350px", xs: '100%' },
+                                    height: "auto",
+                                    background: "#FFFFFF",
+                                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.03)",
+                                    borderRadius: "8px",
+                                    padding: '20px',
+                                    margin:'20px'
+                                }} >
+                                    <Box sx={{ background: ' rgba(180, 201, 206, 0.16)', borderRadius: "8px", textAlign: 'center', padding: '20px' }}>
                                         {item.image}
                                     </Box>
                                     <Box sx={{ display: 'flex', justifyContent: 'left', alignItems: 'flex-start', flexWrap: 'wrap', width: '100%', padding: '10px' }}>

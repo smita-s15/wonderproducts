@@ -19,7 +19,7 @@ export const Navbar = () => {
             <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
           </NavLink>
         </Box>
-        <Box flexDirection='row' sx={{ mr: 2, justifyContent:'center', alignItems:'center' , display: { xs: 'none',lg:'block'} , }}
+        <Box flexDirection='row' sx={{ mr: 2, justifyContent:'center', alignItems:'center' , display: { xs: 'none', lg:'block'} , }}
         >
           <Toolbar >
             <NavLink
@@ -60,9 +60,6 @@ export const Navbar = () => {
               </Box>
             })}
           </Toolbar>
-        </Box>
-        <Box sx={{ mr: 2, display: { xs: 'block', lg: 'none', }}}>
-          <ServiceMenu />
         </Box>
         <MobileMenuBar />
       </Toolbar>

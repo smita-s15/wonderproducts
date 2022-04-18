@@ -18,7 +18,7 @@ export default function ServiceMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  
+
 
   return (
     <div>
@@ -33,12 +33,12 @@ export default function ServiceMenu() {
           fontStyle: "normal",
           fontSize: "15px",
           lineHeight: "19px",
-          color:'#000',
+          color: '#000',
           textDecoration: 'none',
           fontWeight: "500",
           marginLeft: "40px",
-          textAlign:'center'
-        })} 
+          textAlign: 'center'
+        })}
       >
         Services
       </Typography>
@@ -74,4 +74,7 @@ export default function ServiceMenu() {
     </div>
   );
 }
+
+
+
 

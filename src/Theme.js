@@ -1,24 +1,14 @@
 import { createTheme } from "@mui/material/styles";
-import "@fontsource/overpass"
-import "@fontsource/overpass"
-import "@fontsource/cinzel"
-import "@fontsource/cinzel"
-import "@fontsource/playfair-display"
-import "@fontsource/playfair-display"
 
 const defaultTheme = createTheme({
     palette: {
-        background: {
-            default: "#FBFBFB"
-        },
         primary: {
             main: "#000000",
-            dark: "#B4C9CE",
+            dark: "#000000",
         },
         secondary: {
             main: "#FED5C3",
             light: "#B4C9CE",
-            text: '#FFFFFF'
         },
     },
     breakpoints: {
@@ -27,7 +17,7 @@ const defaultTheme = createTheme({
             sm: 600,
             md: 900,
             lg: 1200,
-            xl: 1536,
+            xl: 1920,
         },
     },
     typography: {
@@ -49,55 +39,55 @@ const theme = {
         },
         MuiTypography: {
             styleOverrides: {
-                bold: {
-                    fontFamily: "Overpass",
-                    fontStyle: "normal",
-                    fontWeight: 900,
-                    fontSize: "228px",
-                    textTransform: "uppercase",
-                    color: "#BFD3D8",
-                    opacity: 0.9,
-                    marginBottom: '0',
-                    paddingBottom: '0',
-                    position: 'absolute', bottom: '0', border: '1px solid red',
-                },
                 h1: {
                     fontStyle: "normal",
-                    fontWeight: 900,
+                    fontWeight: 700,
                     fontSize: "56px",
                     lineHeight: "75px",
                     fontFamily: 'Playfair Display',
-                    [defaultTheme.breakpoints.down(1200)]: {
-                        color: 'red',
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontWeight: 700, fontSize: "32px", lineHeight: "43px"
                     },
                 },
                 h2: {
-                    fontFamily: 'Overpass',
+                    fontFamily: 'Playfair Display',
                     fontStyle: "normal",
-                    fontWeight: 900,
+                    fontWeight: 700,
                     fontSize: "48px",
                     lineHeight: "64px",
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontWeight: 600, fontSize: "28px", lineHeight: "37px"
+                    },
                 },
                 h3: {
                     fontFamily: 'Playfair Display',
                     fontStyle: "normal",
                     fontWeight: 700,
                     fontSize: "38px",
-                    lineHeight: "51px"
+                    lineHeight: "51px",
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontWeight: 600, fontSize: "26px", lineHeight: "35px"
+                    },
                 },
                 h4: {
                     fontFamily: "Overpass",
                     fontStyle: "normal",
                     fontWeight: 600,
                     fontSize: "28px",
-                    lineHeight: "35px"
+                    lineHeight: "35px",
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontWeight: 600, fontSize: "28px", lineHeight: "35px"
+                    },
                 },
                 h5: {
                     fontFamily: "Overpass",
                     fontStyle: "normal",
                     fontWeight: 500,
                     fontSize: "25px",
-                    lineHeight: "32px"
+                    lineHeight: "32px",
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontSize: "18px",
+                    },
                 },
                 h6: {
                     fontFamily: "Overpass",
@@ -105,21 +95,29 @@ const theme = {
                     fontWeight: 400,
                     fontSize: "18px",
                     lineHeight: "23px",
-                    
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontSize: "14px",
+                    },
                 },
                 body1: {
                     fontFamily: "Overpass",
                     fontStyle: "normal",
                     fontWeight: 400,
                     fontSize: "16px",
-                    lineHeight: "20px"
+                    lineHeight: "20px",
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontSize: "14px",
+                    },
                 },
                 body2: {
                     fontFamily: "Overpass",
                     fontStyle: "normal",
                     fontWeight: 400,
                     fontSize: "14px",
-                    lineHeight: "18px"
+                    lineHeight: "18px",
+                    [defaultTheme.breakpoints.down(900)]: {
+                        fontSize: "12px",
+                    },
                 }
             },
         },
