@@ -4,9 +4,12 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import { Link } from 'react-router-dom';
-import { Typography } from '@mui/material';
+import { Typography, useMediaQuery } from '@mui/material';
 
 export default function ServiceMenu() {
+
+  const matches = useMediaQuery('(min-width:900px)');
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -15,6 +18,7 @@ export default function ServiceMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  
 
   return (
     <div>
@@ -29,10 +33,11 @@ export default function ServiceMenu() {
           fontStyle: "normal",
           fontSize: "15px",
           lineHeight: "19px",
-          color: '#000',
+          color:'#000',
           textDecoration: 'none',
           fontWeight: "500",
-          marginLeft: "40px"
+          marginLeft: "40px",
+          textAlign:'center'
         })} 
       >
         Services

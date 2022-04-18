@@ -45,8 +45,11 @@ export const AboutUs = () => {
                     Group journey
                 </Typography>
             </Container>
-            <Box >
+            <Box sx={{display:{xs:'none', lg:'block'}}}>
                 <img src={require("../../assets/About/roadmap.png")} alt="" style={{ width: '100%' }} />
+            </Box>
+            <Box  sx={{display:{xs:'block', lg:'none'}}} >
+                <img src={require("../../assets/About/roadmapmbl.svg").default} alt="" style={{ width: '100%' }} />
             </Box>
 
 
