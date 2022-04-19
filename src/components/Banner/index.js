@@ -76,7 +76,7 @@ const Page2 = () => {
     <Box sx={{ position: 'relative', height: { sm: '100vh', md: '100vh' }, display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
       <Container sx={{ padding: { md: '100px auto', xs: '10px auto' } }}>
         <Grid container  >
-          <Grid item xs='10' sm='5' md='6'  >
+          <Grid item xs='10' sm='5' md='6'  sx={{mt:{xs:'20%'}}}  >
             <Typography variant="h1" >
               Reasearch and
               <br />
@@ -116,7 +116,7 @@ const Page3 = () => {
     <Box sx={{ position: 'relative', height: { xs: '70vh', sm: '100vh' }, display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
       <Container sx={{ padding: { md: '100px auto', xs: '10px auto' } }}>
         <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', }} >
-          <Grid item xs='12' sm='6' md='6'  >
+          <Grid item xs='12' sm='6' md='6' sx={{mt:{xs:'20%'}}}  >
             <Typography variant="h1" >
               Luxury Packaging
             </Typography>
