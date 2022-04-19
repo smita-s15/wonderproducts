@@ -53,7 +53,6 @@ const MobileCtg = () => {
                     Categories
                 </Typography>
                 <br />
-                {/* <Box sx={{ display: 'flex', gap: '30px', justifyContent: 'space-between', flexWrap: 'wrap' }}> */}
                 <Slider {...settings}>
                     {Data.map((item, i) => (
                         <div>
@@ -67,7 +66,6 @@ const MobileCtg = () => {
                         </div>
                     ))}
                 </Slider>
-                {/* </Box> */}
                 <Box
                     display={active ? ("block") : ("none")}
                     className={classes.hover_box}
