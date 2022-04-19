@@ -15,7 +15,7 @@ export const FAQ = () => {
                 </Typography>
                 <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: '50px' }} >
                     {faq.map((item, index) =>
-                        <Grid item xs='12' md='6' lg='5'   >
+                        <Grid item xs='12' md='6' lg='5' >
                             <Accordion key={index} sx={{ marginY: '10px', boxShadow: '0', backgroundColor: '#FFFFFF' }}  >
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}

@@ -15,7 +15,7 @@ export const Globals = () => {
             </Box>
 
             <Box flexDirection='column' sx={{ display: 'flex', justifyContent: 'center', width: '100%', overflow: 'hidden' }}  >
-                <Box bgcolor='#FED5C3' width='100%' mt={20} height='400px' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', }}>
+                <Box bgcolor='#FED5C3' width='100%'  height='400px' sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', mt:{md:'20px'} }}>
                     <Container fixed sx={{ marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '20px', }}>
                         <Typography variant='h3'  >
                             Global Network
