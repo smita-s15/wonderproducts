@@ -91,7 +91,7 @@ const Page2 = () => {
             </Button>
           </Grid>
           <Grid item xs='10' sm='5' md='6' sx={{ display: 'flex', justifyContent: 'center', }} >
-            <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '100%'  }} />
+            <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '100%' }} />
           </Grid>
         </Grid>
       </Container>
@@ -193,14 +193,15 @@ const Page4 = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xl="3" md="3" xs="3">
+          <Grid item xl="3" md="3" xs="4">
             <Box sx={{ background: { md: '#FED5C3', xs: 'transparent' }, height: { md: '100vh', xs: '50vh' }, gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <img src={require("../../ui/assets/Banner/Rectangle 4317.png")} alt="" style={{ width: '70%', }} />
-              <Typography variant="h6" color="initial" textAlign="center" sx={{ marginBottom: '20px' }} fontFamily="cinzel">
+              <img src={require("../../ui/assets/Banner/Rectangle 4355.png")} alt="" style={{ width: '70%' }} />
+              <Typography variant="h6" color="initial" textAlign="center" fontFamily="cinzel">
                 <b>TURN KEY PROJECTS</b>
               </Typography>
             </Box>
           </Grid>
+
         </Grid>
       </Box>
     </>

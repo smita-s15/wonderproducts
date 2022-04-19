@@ -8,18 +8,13 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const MobileMenuBar = () => {
   const [open, setOpen] = React.useState(false);
-
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
-
   const [openMblServices, setOpenMblServices] = React.useState(false);
-
   const handleClickMblServices = () => {
     setOpenMblServices(!openMblServices);
   };
-
-
 
   return (
     <>
