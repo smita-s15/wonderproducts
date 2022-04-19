@@ -43,14 +43,15 @@ export const MobileMenuBar = () => {
             height: 'auto',
             borderRadius: '20px 20px 0 0',
             textAlign: 'center',
-            gap:'20px',
-            marginX:"auto",
-            alignItems:'center'
+            gap: '10px',
+            marginX: "auto",
+            alignItems: 'center'
           }
         }}
       >
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginX:'auto', flexDirection:'column', gap:'10px', mt:'10px', mb:'-5px' }}  >
           <KeyboardArrowUpIcon
-            sx={{ color: '#fff', mt:'20px'}}
+            sx={{ color: '#fff',  }}
             onClick={toggleDrawer(false)}
           />
           <NavLink to="AboutUs" onClick={toggleDrawer(false)}
@@ -60,33 +61,31 @@ export const MobileMenuBar = () => {
             </Typography>
           </NavLink>
           <Typography onClick={handleClickMblServices} color="#fff" sx={{ cursor: 'pointer', }}>
-            Services <br /> <br /> <KeyboardArrowDownIcon />
+            Services  <br /> <KeyboardArrowDownIcon />
           </Typography>
-          <Collapse in={openMblServices} timeout="auto" unmountOnExit>
-            <Box >
-              {ServiceLinks.map((item, index) => (
-                <>
-                  <NavLink 
-                    key={index}
-                    onClick={toggleDrawer(false)}
-                    style={({
-                      fontFamily: "Overpass",
-                      fontStyle: "normal",
-                      fontSize: "15px",
-                      lineHeight: "19px",
-                      color: '#fff',
-                      textDecoration: 'none',
-
-                    })}
-                    to={item.link}
-                  >
-                    {item.title}
-                  </NavLink>
-                  <br /> 
-                </>
-              ))}
+        </Box>
+        <Collapse in={openMblServices} timeout="auto" unmountOnExit  >
+          {ServiceLinks.map((item, index) => {
+            return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30px' }}  >
+              <NavLink
+                key={index}
+                onClick={toggleDrawer(false)}
+                style={({
+                  fontFamily: "Overpass",
+                  fontStyle: "normal",
+                  fontSize: "15px",
+                  lineHeight: "19px",
+                  color: '#fff',
+                  textDecoration: 'none',
+                })}
+                to={item.link}
+              >
+                {item.title}
+              </NavLink>
             </Box>
-          </Collapse>
+          }
+          )}
+        </Collapse>
         
         {Arr?.map((item, index) => {
           return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', marginX: 'auto', alignItems: 'center', flexDirection: 'column', }}  >
@@ -107,19 +106,15 @@ export const MobileMenuBar = () => {
             </NavLink>
           </Box>
         })}
-        <NavLink to="/" sx={{mb:'20px'}}>
-            <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
-          </NavLink>
+        <NavLink to="/" sx={{ mb: '20px' }}>
+          <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
+        </NavLink>
       </SwipeableDrawer>
     </>
   );
 }
 
 const Arr = [
-  {
-    title: 'About',
-    link: '/AboutUs'
-  },
   {
     title: 'Categories',
     link: '/Categories'

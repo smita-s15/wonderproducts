@@ -24,7 +24,7 @@ export const TurnProject = () => {
                     wrap="wrap"
                     sx={{ position: "relative" }}
                 >
-                    <Grid item xl="6" md="6" lg='6' xs="12"  sx={{ marginTop: '100px', marginTop:{md:'200px',xs:'auto'} }} >
+                    <Grid item xl="6" md="6" lg='6' xs="12" sx={{ marginTop: '100px', marginTop: { md: '200px', xs: 'auto' } }} >
                         <Typography gutterBottom variant="h3">
                             Reasearch & Development
                         </Typography>
@@ -42,21 +42,21 @@ export const TurnProject = () => {
                         </Typography>
                     </Grid>
                     <Grid item xl="6" md="6" lg='6' xs="12" >
-                        <img src={require("../../assets/Services/turnkeyproj1.png")} alt="" style={{width:'100%' }} />
+                        <img src={require("../../assets/Services/turnkeyproj1.png")} alt="" style={{ width: '100%' }} />
                     </Grid>
                 </Grid>
             </Container>
 
             <Box position='relative' bgcolor='#FED5C3' display='flex' flexDirection='column' alignContent='center' justifyContent="center">
-                <Container fixed sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                    <Box width='100%' marginTop={10} >
+                <Container fixed sx={{ padding: { md: '150px auto', xs: '100px auto' }, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: { sm: '50px auto', md: '100px auto' } }}>
+                    <Box width='100%'  >
                         <Typography variant="h3"  >
                             Packaging Procurement
                         </Typography>
                     </Box>
-                    <Grid container xs='12' sm='12' md='12' lg='12' xl='12' sx={{ padding: '100px 0', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row-reverse', }} >
-                        <Grid item xs='12' sm='12' md='7' lg='6' xl='6' sx={{ display: 'flex', justifyContent: 'center', gap: '10px', flexDirection: 'column' }}  >
-                            <br />
+                    <Grid container >
+                        <Grid item xs='12' md='6'    >
+
                             <Typography variant='h6'>
                                 Chemco Corp. offers a myriad of product containers with an almost unlimited selection of standard, customized and professional packaging options. From stock items to custom molding, Chemco Corp. can be your partner in selecting the packaging that will suit your particular needs. Taking this into account, our goal is to help your company stand out in a sea of products and display your brand.
                                 <br />
@@ -69,15 +69,14 @@ export const TurnProject = () => {
                                 </Button>
                             </Box>
                         </Grid>
-                        <Grid item xs='12' sm='12' md='7' lg='6' xl='6'  >
-                            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
-                                <img src={require("../../assets/About/set-skincare-bottles-containers 2 (1).png")} alt="" style={{ width: '100%' }} />
-                            </Box>
+                        <Grid item xs='12' md='6'  >
+                            <img src={require("../../assets/About/set-skincare-bottles-containers 2 (1).png")} alt="" style={{ width: '100%' }} />
+
                         </Grid>
                     </Grid>
                 </Container>
             </Box>
-            <Container fixed >
+            <Container fixed sx={{ padding: { md: '150px auto', xs: '100px auto' }, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: { sm: '50px auto', md: '100px auto' } }}>
                 <Grid
                     container
                     xl="12" md="12" lg='12' xs="12"
@@ -89,7 +88,7 @@ export const TurnProject = () => {
                     wrap="wrap"
                     sx={{ position: "relative" }}
                 >
-                    <Grid item xl="6" md="6" lg='6' xs="12" >
+                    <Grid item xs="12" md='6' >
                         <Typography gutterBottom variant="h3">
                             Turn Key
                         </Typography>
@@ -97,8 +96,8 @@ export const TurnProject = () => {
                             FORMULATING: Many of our customers come to us for new formulas to stay ahead of the competition; others come to us to develop formulas for a new business. We create all types of products, from basic to complex. Whatever the need, we can help. For example, we can create basic products, such as shampoos with up-to-date aspects, such as sulfate-free, paraben-free, natural and organic formulations. Also, we create cutting-edge formulas using the latest ingredients for hair, body and facial care.
                         </Typography>
                     </Grid>
-                    <Grid item xl="6" md="6" lg='6' xs="12" >
-                            <img src={require("../../assets/Services/Group 1000001682.png")} alt="" style={{width:'100%'}} /> 
+                    <Grid item md="6" xs="12" >
+                        <img src={require("../../assets/Services/Group 1000001682.png")} alt="" style={{ width: '100%' }} />
                     </Grid>
                 </Grid>
             </Container>
