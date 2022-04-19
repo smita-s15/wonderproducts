@@ -8,7 +8,7 @@ import React from 'react'
 export const Globals = () => {
     return (
         <>
-            <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
+         <Box className="half-banner" sx={{ display: 'flex', alignItems: { md: 'flex-end', xs: 'center' } }}>
                 <Container fixed>
                     <img src={require("../../ui/assets/Globals/globalnetwork.png")} alt="" style={{ position: 'absolute', width: '80%', bottom: '10px', }} />
                 </Container>
