@@ -15,8 +15,8 @@ export const FAQ = () => {
                 </Typography>
                 <Grid container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', mt: '50px' }} >
                     {faq.map((item, index) =>
-                        <Grid item xs='12' lg='6'  >
-                            <Accordion key={index} sx={{ margin: '10px', boxShadow: '0', backgroundColor: '#FFFFFF' }}  >
+                        <Grid item xs='12' md='6' lg='5'   >
+                            <Accordion key={index} sx={{ marginY: '10px', boxShadow: '0', backgroundColor: '#FFFFFF' }}  >
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel1a-content"
@@ -32,9 +32,9 @@ export const FAQ = () => {
                             </Accordion>
                         </Grid>
                     )}
-                    <Grid item xs='12' lg='6'  >
-                        {faq2.map((item, index) =>
-                            <Accordion key={index} sx={{ margin: '10px', boxShadow: '0', backgroundColor: '#FFFFFF' }} >
+                    {faq2.map((item, index) =>
+                        <Grid item xs='12' md='6' lg='5'  >
+                            <Accordion key={index} sx={{ marginY: '10px', boxShadow: '0', backgroundColor: '#FFFFFF' }} >
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel1a-content"
@@ -48,8 +48,8 @@ export const FAQ = () => {
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
-                        )}
-                    </Grid>
+                        </Grid>
+                    )}
                 </Grid>
             </Container>
         </>
