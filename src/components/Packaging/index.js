@@ -76,7 +76,6 @@ const Packaging = () => {
                         <Box key={index} >
                             {item.img}
                         </Box>
-
                     )}
                 </Slider>
             </Container>

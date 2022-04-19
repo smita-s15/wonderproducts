@@ -76,7 +76,7 @@ export const TurnProject = () => {
                     </Grid>
                 </Container>
             </Box>
-            <Container fixed sx={{ padding: { md: '150px auto', xs: '100px auto' }, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', margin: { sm: '50px auto', md: '100px auto' } }}>
+            <Container fixed sx={{  display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
                 <Grid
                     container
                     xl="12" md="12" lg='12' xs="12"
@@ -86,7 +86,7 @@ export const TurnProject = () => {
                     alignItems="center"
                     alignContent="center"
                     wrap="wrap"
-                    sx={{ position: "relative" }}
+                    sx={{ position: "relative", }}
                 >
                     <Grid item xs="12" md='6' >
                         <Typography gutterBottom variant="h3">

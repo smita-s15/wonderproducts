@@ -38,17 +38,15 @@ export const AboutUs = () => {
                 </Grid>
             </Container>
 
-            <Box sx={{ margin: '200px' }} >
-            </Box>
-            <Container fixed sx={{ margin: '100px auto', }}>
+            <Container fixed sx={{  padding: { md: '100px auto', xs: '50px auto' }, display: 'flex',  alignItems: 'center', margin:'30px auto' }}>
                 <Typography variant="h3" color="initial">
                     Group journey
                 </Typography>
             </Container>
-            <Box sx={{display:{xs:'none', lg:'block'}}}>
+            <Box sx={{display:{xs:'none', md:'block'}}}>
                 <img src={require("../../assets/About/roadmap.png")} alt="" style={{ width: '100%' }} />
             </Box>
-            <Box  sx={{display:{xs:'block', lg:'none'}}} >
+            <Box  sx={{display:{xs:'block', md:'none'}}} >
                 <img src={require("../../assets/About/roadmapmbl.svg").default} alt="" style={{ width: '100%' }} />
             </Box>
 

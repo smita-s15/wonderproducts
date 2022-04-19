@@ -66,7 +66,7 @@ export const MobileMenuBar = () => {
         </Box>
         <Collapse in={openMblServices} timeout="auto" unmountOnExit  >
           {ServiceLinks.map((item, index) => {
-            return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30px' }}  >
+            return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30px', marginX:'auto', }}  >
               <NavLink
                 key={index}
                 onClick={toggleDrawer(false)}
@@ -88,7 +88,7 @@ export const MobileMenuBar = () => {
         </Collapse>
         
         {Arr?.map((item, index) => {
-          return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', marginX: 'auto', alignItems: 'center', flexDirection: 'column', }}  >
+          return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', marginX: 'auto', alignItems: 'center', flexDirection: 'column',  marginX:'auto',}}  >
             <NavLink
               onClick={toggleDrawer(false)}
               style={({
@@ -106,7 +106,7 @@ export const MobileMenuBar = () => {
             </NavLink>
           </Box>
         })}
-        <NavLink to="/" sx={{ mb: '20px' }}>
+        <NavLink to="/" sx={{ m: '30px' }} onClick={toggleDrawer(false)}>
           <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
         </NavLink>
       </SwipeableDrawer>

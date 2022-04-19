@@ -5,7 +5,7 @@ import React from 'react'
 export const About = () => {
   return (
     <Box position='relative' bgcolor='#FED5C3' display='flex' alignContent='center' justifyContent="center" >
-      <Container fixed sx={{  padding: { md: '100px auto', xs: '50px auto' }, display: 'flex', justifyContent: 'center', alignItems: 'center', marginY:'100px' }}>
+      <Container fixed sx={{  padding: { md: '100px auto', xs: '50px auto' }, display: 'flex', justifyContent: 'center', alignItems: 'center', marginY:'30px' }}>
         <Grid container  >
           <Grid item xs='12' md='6'   >
             <Typography variant="h3"  ><b>

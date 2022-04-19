@@ -16,7 +16,7 @@ export const Packaging = () => {
                 <Container fixed sx={{ padding: { md: '100px auto', xs: '50px auto' }, marginY:'100px ', display:'flex', alignItems:'center'}} >
                     <Grid container  >
                         {details.map((item, index) => {
-                            return <Grid key={index} item lg='4' md='6' xs='12' >
+                            return <Grid key={index} item lg='4' md='6' xs='10' >
                                 <Box sx={{
                                     width: { md: "350px", xs: '100%' },
                                     height: "135px",
