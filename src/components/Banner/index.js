@@ -73,10 +73,10 @@ const Page1 = () => {
 
 const Page2 = () => {
   return (
-    <Box sx={{ position: 'relative', height:'100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
-        <Container sx={{ padding: { md: '100px auto', xs: '10px auto' }, }}>
-        <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', }} >
-          <Grid item xs='12' sm='12' md='6' lg='5' xl='6'  >
+    <Box sx={{ position: 'relative', height: { sm: '100vh', md: '100vh' }, display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
+      <Container sx={{ padding: { md: '100px auto', xs: '10px auto' } }}>
+        <Grid container  >
+          <Grid item xs='10' sm='5' md='6'  >
             <Typography variant="h1" >
               Reasearch and
               <br />
@@ -90,8 +90,8 @@ const Page2 = () => {
               Explore!
             </Button>
           </Grid>
-          <Grid item xl="6" md="6" xs="12" sx={{ zIndex: '50', marginTop: { md: '0', xs: '30px' } }}  >
-            <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '100%', height: '30%' }} />
+          <Grid item xs='10' sm='5' md='6' sx={{ display: 'flex', justifyContent: 'center', }} >
+            <img src={require("../../ui/assets/Banner/pngaaa 1.png")} alt="" style={{ width: '100%'  }} />
           </Grid>
         </Grid>
       </Container>
@@ -116,7 +116,7 @@ const Page3 = () => {
     <Box sx={{ position: 'relative', height: { xs: '70vh', sm: '100vh' }, display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
       <Container sx={{ padding: { md: '100px auto', xs: '10px auto' } }}>
         <Grid container sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', }} >
-          <Grid item xs='12' md='6'  >
+          <Grid item xs='12' sm='6' md='6'  >
             <Typography variant="h1" >
               Luxury Packaging
             </Typography>
@@ -128,7 +128,7 @@ const Page3 = () => {
               Explore!
             </Button>
           </Grid>
-          <Grid item xs='12' md='6' sx={{ display: 'flex', justifyContent: 'center', mt: { xs: '100px' } }}  >
+          <Grid item xs='12' sm='6' md='6' sx={{ display: 'flex', justifyContent: 'center', mt: { xs: '100px' } }}  >
             <img src={require("../../ui/assets/Banner/132 1.png")} alt="" style={{ width: '100%', }} />
           </Grid>
         </Grid>
@@ -195,7 +195,7 @@ const Page4 = () => {
           </Grid>
           <Grid item xl="3" md="3" xs="3">
             <Box sx={{ background: { md: '#FED5C3', xs: 'transparent' }, height: { md: '100vh', xs: '50vh' }, gap: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-              <img src={require("../../ui/assets/Banner/Rectangle 4317.png")} alt="" style={{ width: '70%' }} />
+              <img src={require("../../ui/assets/Banner/Rectangle 4317.png")} alt="" style={{ width: '70%', }} />
               <Typography variant="h6" color="initial" textAlign="center" sx={{ marginBottom: '20px' }} fontFamily="cinzel">
                 <b>TURN KEY PROJECTS</b>
               </Typography>

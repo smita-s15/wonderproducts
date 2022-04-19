@@ -1,6 +1,6 @@
 import * as React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Box, Collapse, Fade, IconButton, Typography, } from '@mui/material';
+import { Box, Collapse, IconButton, Typography, } from '@mui/material';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import { NavLink } from 'react-router-dom';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -12,23 +12,13 @@ export const MobileMenuBar = () => {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
-  const openPop = Boolean(anchorEl);
-  const id = openPop ? 'simple-popover' : undefined;
-
-  // mbl services
   const [openMblServices, setOpenMblServices] = React.useState(false);
 
   const handleClickMblServices = () => {
     setOpenMblServices(!openMblServices);
   };
+
 
 
   return (
@@ -58,33 +48,55 @@ export const MobileMenuBar = () => {
             height: 'auto',
             borderRadius: '20px 20px 0 0',
             textAlign: 'center',
-            gap: '30px',
-            padding: '30px'
+            gap:'20px',
+            marginX:"auto",
+            alignItems:'center'
           }
         }}
       >
-        <Typography id="fade-menu"
-          MenuListProps={{
-            'aria-labelledby': 'fade-button',
-          }}
-          anchorEl={anchorEl}
-          open={open} color="#fff" sx={{ cursor: 'pointer' }}>
-          Services <br /> <KeyboardArrowDownIcon />
-        </Typography>
-        <Collapse timeout="auto" unmountOnExit>
-          <Box bgcolor='red'>
-            {ServiceLinks.map((item, index) => (
-              <NavLink key={index} to={item.url} onClick={toggleDrawer(false)}
-              >
-                {item.title}
-              </NavLink>
-            ))}
-          </Box>
-        </Collapse>
+          <KeyboardArrowUpIcon
+            sx={{ color: '#fff', mt:'20px'}}
+            onClick={toggleDrawer(false)}
+          />
+          <NavLink to="AboutUs" onClick={toggleDrawer(false)}
+            style={{ textDecoration: 'none', }}>
+            <Typography color="#fff" >
+              About Us
+            </Typography>
+          </NavLink>
+          <Typography onClick={handleClickMblServices} color="#fff" sx={{ cursor: 'pointer', }}>
+            Services <br /> <br /> <KeyboardArrowDownIcon />
+          </Typography>
+          <Collapse in={openMblServices} timeout="auto" unmountOnExit>
+            <Box >
+              {ServiceLinks.map((item, index) => (
+                <>
+                  <NavLink 
+                    key={index}
+                    onClick={toggleDrawer(false)}
+                    style={({
+                      fontFamily: "Overpass",
+                      fontStyle: "normal",
+                      fontSize: "15px",
+                      lineHeight: "19px",
+                      color: '#fff',
+                      textDecoration: 'none',
 
+                    })}
+                    to={item.link}
+                  >
+                    {item.title}
+                  </NavLink>
+                  <br /> 
+                </>
+              ))}
+            </Box>
+          </Collapse>
+        
         {Arr?.map((item, index) => {
-          return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', marginX: 'auto', alignItems: 'center', flexDirection: 'column' }}  >
+          return <Box key={index} sx={{ display: 'flex', justifyContent: 'center', marginX: 'auto', alignItems: 'center', flexDirection: 'column', }}  >
             <NavLink
+              onClick={toggleDrawer(false)}
               style={({
                 fontFamily: "Overpass",
                 fontStyle: "normal",
@@ -92,6 +104,7 @@ export const MobileMenuBar = () => {
                 lineHeight: "19px",
                 color: '#fff',
                 textDecoration: 'none',
+
               })}
               to={item.link}
             >
@@ -99,7 +112,9 @@ export const MobileMenuBar = () => {
             </NavLink>
           </Box>
         })}
-
+        <NavLink to="/" sx={{mb:'20px'}}>
+            <img src={require("../../ui/assets/Navbar/logo.svg").default} alt="" />
+          </NavLink>
       </SwipeableDrawer>
     </>
   );
@@ -109,10 +124,6 @@ const Arr = [
   {
     title: 'About',
     link: '/AboutUs'
-  },
-  {
-    title: 'Categories',
-    link: '/Categories'
   },
   {
     title: 'Categories',

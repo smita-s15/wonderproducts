@@ -31,21 +31,21 @@ export const Footer = () => {
                     <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px', mt: '30px' }}>
                         <Stack spacing={2}>
                         {Quick1.map((item, index) => 
-                            <Typography sx={{ color: 'white' }}>
+                            <Typography key={index} sx={{ color: 'white' }}>
                                 {item.title}
                             </Typography>
                         )}
                         </Stack>
                         <Stack spacing={2}>
-                        {Quick3.map((item, index) => 
-                            <Typography sx={{ color: 'white' }}>
+                        {Quick2.map((item, index) => 
+                            <Typography key={index}  sx={{ color: 'white' }}>
                                 {item.title}
                             </Typography>
                         )}
                         </Stack>
                         <Stack spacing={2} >
                         {Quick3.map((item, index) => 
-                            <Typography sx={{ color: 'white' }}>
+                            <Typography key={index}  sx={{ color: 'white' }}>
                                 {item.title}
                             </Typography>
                         )}

@@ -13,7 +13,7 @@ const Two = () => {
   return (
     <>
 
-      <Box sx={{ display: 'flex', gap: '30px', justifyContent: 'space-between', flexWrap: { md: 'nowrap', xs: 'wrap' } }}>
+      <Box sx={{ display: 'flex', gap: '30px', justifyContent: 'space-between', flexWrap: { md: 'wrap', xs: 'wrap' } }}>
         {Data.map((item, i) => (
           <div>
             <Box className={classes.card} onMouseOut={() => { setActive(false); setActiveComp("") }}
@@ -79,12 +79,12 @@ const Details = [
         alignContent="center"
         wrap="wrap"
       >
-        <Grid item xl="3" md="3">
+        <Grid item xl="3" md="6">
           Foot Care Cream
           <br /><br />
           Foot Gel
         </Grid>
-        <Grid item xl="3" md="3">
+        <Grid item xl="3" md="6">
         </Grid>
       </Grid>
     </>

@@ -10,7 +10,7 @@ const Packaging = () => {
     const classes = useStyles();
     var settings = {
         dots: false,
-        arrows:false,
+        arrows: false,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -66,18 +66,17 @@ const Packaging = () => {
     ]
     return (
         <>
-             <Container fixed sx={{ margin:  { md: '100px auto', xs: '50px auto' }, }}>
+            <Container fixed sx={{ margin: { md: '100px auto', xs: '50px auto' }, }}>
                 <Typography variant="h3" color="initial">
                     Packaging
                 </Typography>
                 <br />
                 <Slider {...settings}>
                     {Data.map((item, index) =>
-                        <>
-                            <Box key={index} >
-                                {item.img}
-                            </Box>
-                        </>
+                        <Box key={index} >
+                            {item.img}
+                        </Box>
+
                     )}
                 </Slider>
             </Container>

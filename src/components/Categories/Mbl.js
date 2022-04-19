@@ -9,7 +9,7 @@ const MobileCtg = () => {
     const classes = useStyles()
     const [active, setActive] = React.useState(false)
     const [activeComp, setActiveComp] = React.useState("")
-    // slider
+
     var settings = {
         dots: true,
         infinite: true,
@@ -21,9 +21,9 @@ const MobileCtg = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 900,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 3,
                     infinite: true,
                     dots: true
@@ -143,7 +143,7 @@ const Details = [
             alignContent="center"
             wrap="wrap"
           >
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Hair Vetilyzer
               <br /><br />
               Men hair gel
@@ -154,7 +154,7 @@ const Details = [
               <br /><br />
               Daily use Shampoo
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Anti Dandruff Shampoo
               <br /><br />
               HairSpaSfiaMpOO
@@ -165,7 +165,7 @@ const Details = [
               <br /><br />
               Anti Dandrul Lotion
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Hair Masque
               <br /><br />
               Hair 0iI
@@ -176,7 +176,7 @@ const Details = [
               <br /><br />
               Hair Growth Sprays
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Hair Cream
               <br /><br />
               Hair Gel
@@ -202,7 +202,7 @@ const Details = [
             alignContent="center"
             wrap="wrap"
           >
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Face Cream (M/W)
               <br /><br />
               Sun Screen (Cream/ Gel/Lotion)
@@ -215,7 +215,7 @@ const Details = [
               <br /><br />
               Lip Barn
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Face Wash 6 Scrub
               <br /><br />
               Facial Kit
@@ -227,7 +227,7 @@ const Details = [
               Shave Foam
     
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Fairness Cream (M/\/Y)
               <br /><br />
               BB CREAM
@@ -240,7 +240,7 @@ const Details = [
               <br /><br />
               Face Primer
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Shaving Gel
               <br /><br />
               Tea Tree 0iI
@@ -305,7 +305,7 @@ const Details = [
               <br /><br />
               Vaginal Wash
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3"  xs="6">
               Moisturieser
               <br /><br />
               Mosquito Repllant Gel
@@ -476,7 +476,7 @@ const Details = [
               <br /><br />
               Detergent Cake
             </Grid>
-            <Grid item xl="3" md="3" xs="6">
+            <Grid item xl="3" md="3" xs="12">
               Room Freshner(0f All Flavours)
               <br /><br />
               Industrial Maintainance Sprays
